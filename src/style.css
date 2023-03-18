@@ -205,11 +205,11 @@ footer {
     gap: 1rem;
     margin: 0;
 }
-@media (min-width: 400px {
+@media (min-width: 400px) {
     header {
         flex-direction: row;
-    };
-})
+    }
+}
 @media (min-width: 480px) {
     .product-container {
         display: grid;
