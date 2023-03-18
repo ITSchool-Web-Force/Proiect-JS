@@ -1,23 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <title>Proiect JavaScript</title>
+    <title>Ignys</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./index.scss" />
     <script type="module" src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&family=Nunito+Sans&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="vh-100 d-flex flex-column">
-      <header class="navbar bg-primary bg-gradient">
-        <div class="container-fluid">
-          <h1 class="navbar-brand mb-0 text-white">Proiect JavaScript</h1>
-        </div>
-      </header>
-      <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
-        <h2 class="display-1 text-center">15 Septembrie 2022</h2>
-      </main>
+    <div class="wrapper">
+        <header>
+          <div class="logo">
+            <a href="#">
+              <img id="logo" src="./images/logo.jpg" alt="logo image">
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="blog.html"class="menu-item products">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="main-image">
+            <img src="./images/background.jpg">
+          </div>
+          <section>
+            <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
+            <p>Produsele noastre</p>
+            <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
+          </section>
+          <div class="product-container">
+              <div class="candles" id="candles2">
+                <img class="candles-image" src="./images/lumanare_babilon.jpg" alt="candles image">
+                <p class="image-text">lumanare babilon</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+              <div class="candles" id="candles3">
+                <img class="candles-image" src="./images/lumanare_provence.jpg" alt="candles image">
+                <p class="image-text">lumanare provence</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+              <div class="candles" id="candles4">
+                <img class="candles-image" src="./images/lumanare_paris.jpg" alt="candles image">
+                <p class="image-text">lumanare paris</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+              <div class="candles" id="candles5">
+                <img class="candles-image" src="./images/lumanare_freya.jpg" alt="candles image">
+                <p class="image-text">lumanare freya</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+              <div class="candles" id="candles6">
+                <img class="candles-image" src="./images/lumanare_freyr.jpg" alt="candles image">
+                <p class="image-text">lumanare freyr</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+              <div class="candles" id="candles7">
+                <img class="candles-image" src="./images/lumanare_mya.jpg" alt="candles image">
+                <p class="image-text">lumanare mya</p>
+                <p class="image-price">65 RON</p>
+                <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+              </div>
+          </div>
+          <section>
+            <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
+            <p>idei de cadouri</p>
+            <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
+          </section>
+          <div class="product-container">
+            <div class="candles">
+              <img class="candles-image" id="candles8" src="./images/seturi.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles9" src="./images/seturi2.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles10" src="./images/seturi3.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles11" src="./images/seturi4.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles12" src="./images/seturi5.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles13" src="./images/seturi6.jpg" alt="candles image">
+              <p class="image-text">Set cadou la comanda</p>
+              <p class="image-price">65 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+          </div>
+          <section class="accesorii">
+            <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
+            <p>Accesorii</p>
+            <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
+          </section>
+          <div class="product-container">
+            <div class="candles">
+              <img class="candles-image" id="candles8" src="./images/accesorii_1.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles9" src="./images/accesorii_2.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles10" src="./images/accesorii_3.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles11" src="./images/accesorii_1.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles12" src="./images/accesorii_2.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+            <div class="candles">
+              <img class="candles-image" id="candles13" src="./images/accesorii_3.jpg" alt="candles image">
+              <p class="image-text">Tavite</p>
+              <p class="image-price">20 RON</p>
+              <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p id="footer-text"> © Copyright 2023 IGNYS 
+          </p>
+          <div id="footer-contact">
+            <p>ignys.candles@gmail.com</p>
+            <a href="https://web.facebook.com/ignyslumanari">
+              <img id="facebook" src="./images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://web.facebook.com/ignyslumanari">
+              <img id="instagram" src="./images/instagram.webp" alt="instagram">
+          </a>
+          </div>
+        </footer>
     </div>
   </body>
 </html>
+   
+    
+    

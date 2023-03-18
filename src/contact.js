@@ -15,3 +15,15 @@ const logo = document.getElementById("logo");
 logo.addEventListener("click", () => {
   alert("Bine ai venit pe site-ul nostru");
 });
+
+//eveniment 3
+function logSubmit(event) {
+  log.textContent = `Form Submitted!`;
+  event.preventDefault();
+}
+
+const form = document.getElementById("form");
+const log = document.getElementById("log");
+form.addEventListener("submit", logSubmit);
+
+

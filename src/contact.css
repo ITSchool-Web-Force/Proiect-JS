@@ -1,0 +1,204 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', 'Nunito Sans', 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
+    color: #333;
+    background-color:#f4ede7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper {
+    --margin: 1rem;
+
+    width: 85%;
+    margin-inline: auto;
+    margin-block: 1rem;
+    background-color:white;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+    font-size: 1rem;
+    min-height: calc(100vh - 2 * var(--margin));
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+#logo {
+    height: 5vh;
+    display: block;
+    align-items: center;
+}
+main h1 {
+    margin-inline: auto;
+    color:green;
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+label {
+    color:green;
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+}
+#color-button {
+    display: none;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;  
+    padding-inline: 0;
+}
+li a:hover {
+    color: green;
+    font-weight:bold;
+    background-color: rgb(238, 243, 243);
+    padding-inline:1rem;
+    padding-block: 0.3rem;
+    border:2px solid rgba(16, 99, 99, 0.5);
+    padding: 4px 10px;
+    margin: 5px 0 5px 4px;
+    border-radius: 1rem;
+    border: transparent 1px solid;
+}
+li a {
+    text-decoration: none;
+    color: #7E7E7E;
+    font-weight: 200;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 1rem;
+    padding-block-end: 5rem;
+}
+.turned-leaf {
+    transform: rotateY(180deg);
+}
+.product-container, .product-container-accesorii {
+    margin-block: 0;
+    padding-block: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    gap: 1rem;
+    width: 90%;
+    height: 30%;
+    margin-inline: auto;
+}
+#facebook, #instagram {
+    height: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+#val1 {
+    width: 1rem;
+}
+.checkbox-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+footer {
+    color: green;
+    background-color: rgb(238, 243, 243);
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+@media (min-width: 700px) {
+    .topbar-text {
+        display: block;
+        background-color: orangered;
+    }
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+    .logo {
+        padding-inline: 1rem;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: flex-end;
+    }
+}
+@media (min-width: 500px) {
+    #footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    footer {
+        color: green;
+        background-color: rgb(238, 243, 243);
+        padding-block-start: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 920px) {
+    li a {
+        font-size: 1.3rem;
+    }
+    ul {
+        gap: 1rem;
+    }
+    #logo {
+        height: 7vh;
+        padding: 1rem;
+    }
+}
