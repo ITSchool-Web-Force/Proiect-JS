@@ -71,6 +71,7 @@ main {
     flex-wrap: wrap;
     align-content: space-around;
     gap: 1rem;
+    padding-block-end: 3rem;
 }
 .turned-leaf {
     transform: rotateY(180deg);
@@ -297,8 +298,13 @@ footer {
         padding: 1rem;
     }
     section p {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-block: 1.6rem;
+    }
+}
+@media (min-width: 1000px) {
+    .wrapper {
+        width: 65%;
     }
 }
 /*

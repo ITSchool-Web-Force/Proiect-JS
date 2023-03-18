@@ -29,12 +29,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
+    width: 100%;
 }
 #logo {
     height: 5vh;
     display: block;
     align-items: center;
+    padding: 1rem;
 }
 main h1 {
     margin-inline: auto;
@@ -54,18 +55,23 @@ label {
 #color-button {
     display: none;
 }
-ul {
+ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     list-style-type: none;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;  
     padding-inline: 0;
+}
+li a {
+    text-decoration: none;
+    color: #7E7E7E;
+    font-weight: 200;
 }
 li a:hover {
     color: green;
@@ -78,11 +84,6 @@ li a:hover {
     margin: 5px 0 5px 4px;
     border-radius: 1rem;
     border: transparent 1px solid;
-}
-li a {
-    text-decoration: none;
-    color: #7E7E7E;
-    font-weight: 200;
 }
 main {
     display: flex;
@@ -112,12 +113,21 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 2rem;
+    background-color:#f4ede7;
+    border: 1px solid green;
+    border-radius: 2rem;  
+}
+form:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(212, 214, 214, 0.5);
 }
 #val1 {
     width: 1rem;
+}
+.form-group input {
+    min-width: 20vw;
 }
 .checkbox-group {
     width: 100%;
@@ -125,6 +135,15 @@ form {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+textarea {
+    width: 20vw;
+    min-height: 10vh;
+    max-height: 40vh;
+    resize: vertical;
+}
+.btn-group {
+    align-self: center;
 }
 footer {
     color: green;
@@ -142,6 +161,11 @@ footer {
     align-items: center;
     gap: 1rem;
     margin: 0;
+}
+@media (min-width: 400px) {
+    header {
+        flex-direction: row;
+    }
 }
 @media (min-width: 700px) {
     .topbar-text {
@@ -200,5 +224,10 @@ footer {
     #logo {
         height: 7vh;
         padding: 1rem;
+    }
+}
+@media (min-width: 1000px) {
+    .wrapper {
+        width: 65%;
     }
 }

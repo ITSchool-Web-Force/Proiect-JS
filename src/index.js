@@ -10,8 +10,4 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
-//eveniment 2
-const logo = document.getElementById("logo");
-logo.addEventListener("click", () => {
-  alert("Bine ai venit pe site-ul nostru");
-});
+

@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
 });
 
 //eveniment 2
-const logo = document.getElementById("logo");
-logo.addEventListener("click", () => {
+const blog = document.getElementById("blog-title");
+blog.addEventListener("click", () => {
   alert("Bine ai venit pe site-ul nostru");
 });

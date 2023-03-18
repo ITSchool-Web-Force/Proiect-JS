@@ -93,7 +93,7 @@ main {
     grid-column: 1/4;
     grid-row: 3/4;
 }
-.blog-title {
+#blog-title {
     color:green;
     font-family: 'Crafty Girls', cursive;
     font-weight: bold;
@@ -206,7 +206,7 @@ footer {
     }
 }
 @media (min-width: 820px) {
-    .blog-title {
+    #blog-title {
         font-size: 1.7rem;
     }
     .topbar-text {
@@ -304,6 +304,11 @@ footer {
     section p {
         font-size: 3rem;
         padding-block: 1.6rem;
+    }
+}
+@media (min-width: 1000px) {
+    .wrapper {
+        width: 65%;
     }
 }
 /*
