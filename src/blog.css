@@ -175,7 +175,7 @@ footer {
 @media (min-width: 400px) {
     header {
         flex-direction: row;
-    };
+    }
     li a {
         font-size: 1rem;
     }
