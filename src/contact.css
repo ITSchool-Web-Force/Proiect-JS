@@ -22,7 +22,7 @@ body {
     background-color:white;
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
     font-size: 1rem;
-    min-height: calc(100vh - 2 * var(--margin));
+    min-height: calc(100vh-2*var(--margin));
 }
 header {
     display: flex;
