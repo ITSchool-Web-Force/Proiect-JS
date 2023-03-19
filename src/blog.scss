@@ -2,6 +2,7 @@ $enable-shadows: true;
 $enable-gradients: true;
 @import "~bootstrap/scss/bootstrap";
 
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@ body {
     margin-inline: auto;
     margin-block: 1rem;
     background-color:white;
-    color:  #11316c;
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
     font-size: 1rem;
 }
@@ -36,7 +36,7 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     list-style-type: none;
     text-decoration: none;
     color: black;
@@ -65,9 +65,9 @@ li a:hover {
     height: 100%;
     width: 100%;
     margin-inline: auto;
-    background-size: cover; 
-	background-position: center; 
-	background-repeat: no-repeat;
+    background-size:cover; 
+	background-position:center; 
+	background-repeat:no-repeat;
 }
 main {
     display: flex;
@@ -75,103 +75,70 @@ main {
     flex-wrap: wrap;
     align-content: space-around;
     gap: 1rem;
-    padding-block-end: 3rem;
+    padding-block-end: 2rem;
+}
+.leaf {
+    align-self: center;
+    justify-self: flex-end;
+    grid-area: LEAF;
 }
 .turned-leaf {
     transform: rotateY(180deg);
+    justify-self: flex-start;
+    align-self: center;
+    grid-area: TURNED-LEAF;
 }
-.product-container {
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    gap: 1rem;
-    width: 90%;
-    height: 30%;
+#noi {
+    display: block;
+    height: 30vh;
+    width: auto;
     margin-inline: auto;
+    border-radius: 50%;
+    grid-area: US;
+    grid-column: 1/4;
+    grid-row: 3/4;
 }
-.candles-image {
-    margin-inline: auto;
-    box-sizing: content-box;
-    width: 100%;
-    grid-area: CANDLES-IMAGE;
-}
-.image-text {
-    grid-area: IMAGE-TEXT;
-    color: #7E7E7E;
-    text-transform: capitalize;
-    font-weight: bold;
-    padding: 0;
-    margin: 0rem;
-}
-.image-price {
-    grid-area: IMAGE-PRICE;
-    margin: 0;
-    font-weight: bold;
-}
-.shopping-cart {
-    grid-area: SHOPPING-CART;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-section p {
+#blog-title {
     color:green;
     font-family: 'Crafty Girls', cursive;
     font-weight: bold;
     margin: 0;
+    padding: 0;
     text-align: center;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    align-self: center;
+    grid-area: BLOG-TITLE;
+}
+.blog-title2 {
+    color:green;
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    align-self: center;
+    grid-area: BLOG-TITLE; 
 }
 .leaf, .turned-leaf {
     display: none;
 }
-#candles1 {
-    grid-area: CANDLES1;
+.articole {
+    display: flex;
+    flex-direction: column;
+    grid-area: ARTICOLE;
 }
-#candles2 {
-    grid-area: CANDLES2;
-}
-#candles3 {
-    grid-area: CANDLES3;
-}
-#candles4 {
-    grid-area: CANDLES4;
-}
-#candles5 {
-    grid-area: CANDLES5;
-}
-#candles6 {
-    grid-area: CANDLES6;
-}
-#candles14 {
-    grid-area: CANDLES14;
-}
-#candles15 {
-    grid-area: CANDLES15;
-}
-#candles16 {
-    grid-area: CANDLES16;
-}
-.candles {
-    display: grid;
-    grid-template-columns: 2.2fr 1.5fr 0.7fr;
-    grid-template-rows: 2fr 0.5fr;
-    grid-template-areas: 
-    "CANDLES-IMAGE CANDLES-IMAGE CANDLES-IMAGE"
-    "IMAGE-TEXT    IMAGE-PRICE   SHOPPING-CART";
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    gap: 0.5rem;
-}
-.candles:hover {
+.articole:hover {
     transform: scale(101%);
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(212, 214, 214, 0.5);
+}
+.text {
+    font-size: 1rem;
+    grid-area: TEXT;
+    padding-inline: 1rem;
+    padding-block: 0;
 }
 #facebook, #instagram {
     height: 2rem;
@@ -213,21 +180,7 @@ footer {
 @media (min-width: 400px) {
     header {
         flex-direction: row;
-        align-content: center;
-        justify-content: center;
     }
-}
-@media (min-width: 480px) {
-    .product-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "CANDLES1  CANDLES2"
-        "CANDLES3  CANDLES4"
-        "CANDLES5  CANDLES6";
-      }
-   
     li a {
         font-size: 1rem;
     }
@@ -237,6 +190,30 @@ footer {
     }
 }
 @media (min-width: 500px) {
+    #footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    footer {
+        color: green;
+        background-color: rgb(238, 243, 243);
+        padding-block-start: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media (min-width: 820px) {
+    #blog-title {
+        font-size: 1.7rem;
+    }
     .topbar-text {
         display: block;
         background-color: orangered;
@@ -264,35 +241,61 @@ footer {
     .leaf, .turned-leaf {
         display: inline-flex;
     }
-    #footer-contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1rem;
-        margin: 0;
-    }
-    footer {
-        color: green;
+    #articol1 {
+        grid-area: ARTICOL1;
+        grid-column: 1/2;
+        grid-row: 2/3;
         background-color: rgb(238, 243, 243);
-        padding-block-start: 1rem;
-        padding-inline: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-inline: 1rem;
+    }
+    #articol2 {
+        grid-area: ARTICOL2;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: rgb(238, 243, 243);
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-inline: 1rem;
+    }
+    #articol3 {
+        grid-area: ARTICOL3;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: rgb(238, 243, 243);
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-inline: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ARTICOL1 STORY"
+        "ARTICOL2 STORY"
+        "ARTICOL3 STORY"
+        ".        STORY";
+    }
+    .story {
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr 0.6fr;
+        grid-template-rows: 0.3fr 0.5fr 1fr;
+        grid-template-areas: 
+        "LEAF BLOG-TITLE TURNED-LEAF"
+        "TEXT       TEXT       TEXT"
+        "US           US        US ";
+        justify-items: center;
+        grid-area: STORY;
+        grid-column: 2/3;
+        grid-row: 1/5;
     }
 }
 @media (min-width: 920px) {
-    .product-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "CANDLES1  CANDLES2 CANDLES3"
-        "CANDLES4  CANDLES5 CANDLES6";
-      }
     li a {
         font-size: 1.3rem;
     }
@@ -304,7 +307,7 @@ footer {
         padding: 1rem;
     }
     section p {
-        font-size: 2rem;
+        font-size: 3rem;
         padding-block: 1.6rem;
     }
 }
