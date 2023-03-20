@@ -237,10 +237,6 @@ footer {
     }
 }
 @media (min-width: 500px) {
-    .topbar-text {
-        display: block;
-        background-color: orangered;
-    }
     header {
         width: 100%;
         padding: 0;
@@ -280,7 +276,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-content: center;
         gap: 1rem;
     }
 }
