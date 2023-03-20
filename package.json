@@ -1,11 +1,22 @@
 {
   "name": "Proiect-JS",
   "source": "src/index.html",
+  "browserslist": "> 5%",
+  "targets": {
+    "default": {
+      "publicUrl": "/Proiect-JS"
+    }
+  },
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+   "start": "parcel",
+   "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "push-dir": "^0.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
   }
 }
