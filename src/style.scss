@@ -28,14 +28,19 @@ header {
 #logo {
     height: 10vh;
     display: block;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
     list-style-type: none;
     text-decoration: none;
@@ -43,11 +48,14 @@ ul{
     text-transform: uppercase;
     font-weight: bold;  
     padding-inline: 0;
+    
 }
 li a {
     text-decoration: none;
     color: #7E7E7E;
     font-weight: 200;
+    font-size: 1.2rem;
+    margin-block: 0;
 }
 li a:hover {
     color: green;
@@ -84,7 +92,7 @@ main {
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
-    gap: 1rem;
+    gap: 1.2rem;
     width: 90%;
     height: 30%;
     margin-inline: auto;
@@ -102,6 +110,7 @@ main {
     font-weight: bold;
     padding: 0;
     margin: 0rem;
+    font-size: 1rem;
 }
 .image-price {
     grid-area: IMAGE-PRICE;
@@ -110,8 +119,8 @@ main {
 }
 .shopping-cart {
     grid-area: SHOPPING-CART;
+    height: 2rem;
 }
-
 section {
     display: flex;
     flex-direction: row;
@@ -125,10 +134,12 @@ section p {
     margin: 0;
     text-align: center;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding-block: 1rem;
+    padding-inline: 0;
 }
 .leaf, .turned-leaf {
-    display: none;
+    height: 1.5rem;
 }
 #candles1 {
     grid-area: CANDLES1;
@@ -165,7 +176,6 @@ section p {
     "CANDLES-IMAGE CANDLES-IMAGE CANDLES-IMAGE"
     "IMAGE-TEXT    IMAGE-PRICE   SHOPPING-CART";
     align-items: center;
-    align-content: center;
     justify-items: center;
     gap: 0.5rem;
 }
@@ -213,6 +223,7 @@ footer {
 @media (min-width: 400px) {
     header {
         flex-direction: row;
+        align-items: center;
         align-content: center;
         justify-content: center;
     }
