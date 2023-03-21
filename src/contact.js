@@ -15,3 +15,13 @@ const contact = document.getElementById("contact");
 contact.addEventListener("click", () => {
   alert("Bine ai venit pe site-ul nostru");
 });
+
+//eveniment 3
+const form = document.getElementById("form");
+
+form.addEventListener("focus", (event) => {
+    event.target.style.background = "pink";
+  },
+  true
+);
+
