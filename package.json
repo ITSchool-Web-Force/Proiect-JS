@@ -1,5 +1,5 @@
 {
-  "name": "Proiect-JS",
+  "name": "my-project",
   "source": "src/index.html",
   "browserslist": "> 5%",
   "targets": {
