@@ -2,11 +2,7 @@ $enable-shadows: true;
 $enable-gradients: true;
 @import "~bootstrap/scss/bootstrap";
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -105,14 +101,16 @@ main {
     height: 2rem;
 }
 form {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     background-color:#f4ede7;
     border: 1px solid green;
     border-radius: 2rem;  
+    gap: 2rem;
 }
 form:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(212, 214, 214, 0.5);
@@ -127,17 +125,22 @@ form:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 textarea {
-    width: 20vw;
-    min-height: 10vh;
-    max-height: 40vh;
+    width: 100%;
+    min-height: 30%;
+    max-height: 40%;
     resize: vertical;
 }
 .btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     align-self: center;
+    font-size: 0.8rem;
 }
 footer {
     color: green;
@@ -162,6 +165,39 @@ footer {
         justify-content: center;
         align-items: center;
     }
+   label {
+    font-size: 1.2rem;
+   }
+   #contact {
+    padding: 2rem;
+   }
+}
+@media (min-width: 500px) {
+    .btn-group {
+        font-size: 1.1rem;
+    }
+    form {
+        width: 70%;
+    }
+    #footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    footer {
+        color: green;
+        background-color: rgb(238, 243, 243);
+        padding-block-start: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 @media (min-width: 700px) {
     header {
@@ -184,28 +220,6 @@ footer {
         align-content: flex-end;
     }
 }
-@media (min-width: 500px) {
-    #footer-contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1rem;
-        margin: 0;
-    }
-    footer {
-        color: green;
-        background-color: rgb(238, 243, 243);
-        padding-block-start: 1rem;
-        padding-inline: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }
-}
-
 @media (min-width: 920px) {
     li a {
         font-size: 1.3rem;
