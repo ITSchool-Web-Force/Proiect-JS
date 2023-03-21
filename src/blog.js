@@ -10,8 +10,3 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
-//eveniment 2
-const blog = document.getElementById("blog-title");
-blog.addEventListener("click", () => {
-  alert("Bine ai venit pe site-ul nostru");
-});
