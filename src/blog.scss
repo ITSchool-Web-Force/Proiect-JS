@@ -91,7 +91,7 @@ main {
 }
 #noi {
     display: block;
-    height: 30vh;
+    height: 20vh;
     width: auto;
     margin-inline: auto;
     border-radius: 50%;
@@ -220,6 +220,9 @@ footer {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+    }
+    #noi {
+        height: 30vh;
     }
 }
 @media (min-width: 820px) {
