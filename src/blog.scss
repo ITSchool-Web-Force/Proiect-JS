@@ -161,6 +161,9 @@ form {
     align-items: center;
     gap: 1rem;
 }
+#facebook, #instagram {
+    height: 2rem;
+}
 footer {
     color: green;
     background-color: rgb(238, 243, 243);
@@ -169,13 +172,21 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+#footer-text {
+    margin: 0;
 }
 #footer-contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin: 0.5;
+}
+#footer-contact p {
     margin: 0;
 }
 @media (min-width: 400px) {

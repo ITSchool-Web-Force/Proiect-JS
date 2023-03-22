@@ -1,12 +1,11 @@
-//eveniment 1
-const btn = document.querySelector("#logo");
-
-function random(number) {
-  return Math.floor(Math.random() * (number + 1));
-}
-
-btn.addEventListener("click", () => {
-  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-  document.body.style.backgroundColor = rndCol;
+const logo = document.getElementById("logo");
+logo.addEventListener("dblclick", (ev) => {
+  ev.currentTarget.style.height = "10vh";
+  ev.currentTarget.style.padding = "0";
+  ev.currentTarget.style.border = "1px solid black";
 });
 
+const blog = document.getElementById("blog-title");
+blog.addEventListener("click", (ev) => {
+  alert("Bine ai venit pe site-ul nostru");
+});

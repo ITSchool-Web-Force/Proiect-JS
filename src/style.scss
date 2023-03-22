@@ -48,7 +48,6 @@ ul{
     text-transform: uppercase;
     font-weight: bold;  
     padding-inline: 0;
-    
 }
 li a {
     text-decoration: none;
@@ -69,7 +68,7 @@ li a:hover {
     border-radius: 1rem;
     border: transparent 1px solid;
 }
-.main-image img{
+#main-image img{
     height: 100%;
     width: 100%;
     margin-inline: auto;
@@ -186,23 +185,6 @@ section p {
 #facebook, #instagram {
     height: 2rem;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-#val1 {
-    width: 1rem;
-}
-.checkbox-group {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
 footer {
     color: green;
     background-color: rgb(238, 243, 243);
@@ -211,13 +193,21 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+#footer-text {
+    margin: 0;
 }
 #footer-contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin: 0.5;
+}
+#footer-contact p {
     margin: 0;
 }
 @media (min-width: 400px) {
