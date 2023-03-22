@@ -2,22 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Proiect JavaScript</title>
+    <title>Depozit materiale constructii</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <div class="vh-100 d-flex flex-column">
-      <header class="navbar bg-primary bg-gradient">
-        <div class="container-fluid">
-          <h1 class="navbar-brand mb-0 text-white">Proiect JavaScript</h1>
+    
+    <!--LOGO-->
+    <img class="logo" src="imagini/logo.png" alt="">
+
+    <!--Navigarea in pagini-->
+    <nav class="navbar">
+      <a href="index.html">Acasa</a>
+      <div class="subnavbar">
+        <button class="subnavbarbtn">Categorii produse <i class="fa fa-caret-down"></i></button>
+        <div class="subnavbar-content">
+          <a href="scandura.html">Scandura</a>
+          <a href="adezivi.html">Adezivi</a>
+          <a href="ciment.html">Ciment</a>
         </div>
-      </header>
-      <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
-        <h2 class="display-1 text-center">15 Septembrie 2022</h2>
-      </main>
+      </div>
+      <a href="contact.html">Contact</a>
+
+      <i class="cart" style="font-size:40px" class="fa">&#xf07a;</i>
+    </nav>
+
+    <img class="banner" src="imagini/banner2.jpg" alt="">
+
+
+    <h1>DEPOZITUL NOSTRU</h1>
+
+    <div class="galerie">
+      <img class="img-depo" src="imagini/img1.jpg">
+      <img class="img-depo" src="imagini/img2.jpg">
     </div>
+
+    <div class="galerie">
+      <img class="img-depo" src="imagini/img6.jpg">
+      <img class="img-depo" src="imagini/img3.jpg">
+    </div>
+
+
+    <h1>PRODUSE NOI</h1>
+
+    <main class="sectiune-produse">
+     
+        <div class="produse">
+            <div class="scandura">
+              <img class="scandura" src="imagini/scandura-constructii-3m.jpg" alt="">
+              <p style="text-align: center; font-size: 17px;">Scandura 3m</p>
+              <p style="font-size:20px;font-weight: bolder; text-align: center; ">975,00 LEI</p>
+              <input class="cos" type="button" value="Adauga in cos">
+            </div>
+
+            <div class="grinda">
+              <img  class="scandura" src="imagini/grinda.png" alt="">
+              <p style="text-align: center; font-size: 17px;">Grinda 8x8x300 Cm</p>
+              <p style="font-size:20px;font-weight: bolder; text-align: center;">19,50 LEI</p>
+              <input class="cos" type="button" value="Adauga in cos">
+            </div>
+          </div>
+
+        <div class="produse">
+            <div class="scandura">
+              <img class="scandura" src="imagini/adeziv.jpg" alt="">
+              <p style="text-align: center; font-size: 17px;">Adeziv pentru polistiren expandat si grafitat</p>
+              <p style="font-size:20px;font-weight: bolder; text-align: center;">29,30 LEI</p>
+              <input class="cos" type="button" value="Adauga in cos">
+            </div>
+
+            <div class="ciment">
+              <img  class="scandura" src="imagini/ciment.png" alt="">
+              <p style="text-align: center; font-size: 17px; margin-top:1.4rem;">Ciment Romcim Ultra, gri, interior/exterior, 40 kg</p>
+              <p style="font-size:20px;font-weight: bolder; text-align: center; margin-top: 2.4rem">35,50 LEI</p>
+              <input class="cos" type="button" value="Adauga in cos">
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer">
+      <div class="info">
+         <div class="contact">
+            <a style="color: black; text-decoration: none;" href="mailto:depozitmaterialeconstructii@yahoo.com" target="_top">E-mail: materialeconstructii@yahoo.com</a>
+            <a style="color: black; text-decoration: none;" href="tel:0772144716">Telefon: 0772144716</a>
+            <p>Locatie: Sabareni Strada principala nr 131 BIS</p>
+         </div>
+
+        <p class="drepturi"> © 2023 Angel & Costi SRL</p>
+    </div>
+    </footer>
   </body>
 </html>

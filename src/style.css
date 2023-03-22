@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Crimson+Text:ital@1&family=Poppins:wght@400;500&display=swap');
+
+/*LOGO*/
+.logo {
+  width: 60vw;
+  height: 20vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart {
+  display: none;
+}
+
+.img-depo {
+  width: 100%;
+}
+/*Navigarea in pagini*/
+.navbar {
+  overflow: hidden;
+  background-color: #78753b;
+  border-radius: 25px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.subnavbar {
+  float: left;
+  overflow: hidden;
+  text-align: right;
+}
+
+
+.subnavbar .subnavbarbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover, .subnavbar:hover .subnavbarbtn {
+  background-color: rgb(199, 155, 69);
+}
+
+
+.subnavbar-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:rgb(199, 155, 69);
+  width: 100%;
+  z-index: 1;
+}
+
+
+.subnavbar-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnavbar-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnavbar:hover .subnavbar-content {
+  display: block;
+}
+
+
+.banner {
+  width: 100%;
+  margin-block-start: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+  margin-block-start: 3rem;
+  font-weight: bolder;
+}
+
+.scandura {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-block-start: 2rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #78753b;
+  border-color: #78753b;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.footer {
+  background-color: rgb(233, 233, 233);
+  margin-block-start: 4rem;
+  padding: 30px;
+}
+
+
+
+
+
+.contact {
+  color: black; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+.drepturi {
+  text-align: center;
+}
+
+
+
+/*  DESKTOP */
+
+@media (min-width:800px) {
+
+  .navbar {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+
+  }
+   .banner, .footer {
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+  .sectiune-produse {
+    width: 80%;
+  }
+
+  .produse {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .scandura{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grinda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .ciment {
+    margin-block-start: 1.5rem;
+  }
+
+  .subnavbar-content {
+   
+    margin-inline-start: 9.9rem;
+    background-color:rgb(199, 155, 69);
+    width: 20%;
+    border-radius: 25px;
+   
+  }
+
+  .galerie {
+    text-align: center;
+    margin-block-start: 2rem;
+  }
+
+  .img-depo {
+    width: 40%;
+   
+  }
+  
+
+}
+
