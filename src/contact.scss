@@ -156,8 +156,9 @@ footer {
     gap: 0.5rem;
     padding: 0.5rem;
 }
-#footer-text {
+#footer-text, #footer-contact p {
     margin: 0;
+    font-size: 1rem;
 }
 #footer-contact {
     display: flex;
@@ -166,9 +167,6 @@ footer {
     align-items: center;
     gap: 0.5rem;
     margin: 0.5;
-}
-#footer-contact p {
-    margin: 0;
 }
 @media (min-width: 400px) {
     header {
