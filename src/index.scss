@@ -280,6 +280,8 @@ html {
             padding-block-end: 1em;
             justify-items: center;
             .expression-card {
+                width: 85%;
+                margin-inline: auto;
                 padding: 1em;
                 margin-inline: 0.8em;
                 margin-block-start: 1em;
@@ -605,8 +607,9 @@ html {
                 text-align: center;
             }
             .expression-card {
+                width: 80%;
+                margin-inline: auto;
                 padding: 1em;
-                margin-inline: 0.8em;
                 margin-block-start: 1em;
                 border-radius: 0.5em;
                 background-color: $third-color;
