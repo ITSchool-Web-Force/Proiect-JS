@@ -18,7 +18,6 @@ imageText.addEventListener("mouseleave", (ev) => {
   ev.currentTarget.style.color = "green";
   ev.currentTarget.style.border = "none";
 });
-
 //eveniment 4 click
 const shoppingCart = document.querySelectorAll(".shopping-cart");
 function cart (event) {
