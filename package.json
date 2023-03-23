@@ -2,15 +2,17 @@
   "name": "Proiect-JS",
   "source": "src/index.html",
   "browserslist": "> 5%",
-
   "targets": {
     "default": {
-    "publicUrl": "/Proiect-JS"
+      "publicUrl": "/Proiect-JS"
     }
-    },
-    
+  },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }
