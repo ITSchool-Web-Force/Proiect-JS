@@ -1,11 +1,9 @@
 {
-  "devDependencies": {
-    "@parcel/transformer-html": "^2.8.3",
-    "@parcel/transformer-sass": "^2.8.3"
-  },
-  "targets": {
-    "default": {
-    "publicUrl": "/Proiect-JS"
-    }
+  "name": "Proiect Js",
+  "source": "src/index.html",
+  "browserslist": "> 5%",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
   }
 }
