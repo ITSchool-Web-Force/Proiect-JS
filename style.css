@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(0, 0, 0);
+
+}
+.nav {
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(52, 52, 53, 0.9);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border: 0.1rem solid rgb(36 37 38 / 90%);
+    border-radius: 0.8rem;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+.header {
+    position: static;
+    text-align: center;
+    border-bottom: 0.1rem solid red;
+}
+.d4logo {
+    display:flex;
+    width: 80%;
+    height: auto;
+    margin-inline: auto;
+    margin-top: 4.7rem;
+}
+.release-date {
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+h1 {
+    color:white;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.4rem red;
+    padding-bottom: 1rem;
+}
+h3 {
+    color: white;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.4rem red;
+    padding-bottom: 2rem;
+}
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+.button {
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+@media screen and (min-width: 700px) {
+    .nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .videocontainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .video {
+        aspect-ratio: 16 / 9;
+        width: 85%;
+        margin: auto;
+    }
+    .button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+
+    }
+}
+@media screen and (min-width: 1000px) {
+    .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        font-size: 2.5vh;
+    }
+}
