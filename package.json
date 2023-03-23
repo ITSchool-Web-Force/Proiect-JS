@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "browserslist": "> 5%",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "npx parcel",
+    "build": "npx parcel build"
   }
 }
