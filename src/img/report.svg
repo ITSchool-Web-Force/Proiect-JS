@@ -6,12 +6,12 @@
     <style type="text/css"><![CDATA[
     @media (prefers-color-scheme: light) {
         path {
-          fill: #000;
+          stroke: #000;
         }
     }
 	  @media (prefers-color-scheme: dark) {
         path {
-            fill: #fff;
+            stroke: #fff;
         }
     }
     ]]></style>
