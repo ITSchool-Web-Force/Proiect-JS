@@ -263,3 +263,55 @@ main {
     margin-inline-start: 9.5%;
   }
 }
+@media (min-width: 950px) {
+  .fitness-img {
+    width: 30rem;
+  }
+  .goals {
+    font-size: 3rem;
+  }
+  .stronger {
+    font-size: 1.5rem;
+  }
+  .protein {
+    font-size: 3rem;
+  }
+  .gym-subcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1160px) {
+  .gym-png {
+    width: 25rem;
+  }
+  .one-png {
+    width: 25rem;
+  }
+  .hard-png {
+    width: 25rem;
+  }
+  .gym-info {
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .trainers {
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .health-clubs {
+    width: 15rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1350px) {
+  .swiper-slide img {
+    width: 19rem;
+    margin-inline-start: 3%;
+  }
+  .protein {
+    font-size: 5rem;
+  }
+}
