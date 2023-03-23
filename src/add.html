@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/index.scss"/>
+
+    <title>Dicționar Urban</title>
+</head>
+<body>
+    <div class="thebody">
+        <header class="theheader">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="/src/index.html"><img src="/src/img/logo.svg" class="logo" alt="logo"/></a>
+                </div>
+                <div class="navbar">
+                    <div class="close-nav"><button>X</button></div>
+                    <nav>
+                        <ul>
+                            <li><a href="/src/index.html">Acasă</a></li>
+                            <li><a href="/src/add.html">Adaugă</a></li>
+                            <li><a href="/src/login.html">Autentificare</a></li>
+                            <li><a href="/src/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bar">
+                    <button>&#9776;</button>
+                </div>
+                <form id="search-form" method="get" action="">
+                <input class="search-input" type="search" placeholder="Caută...">
+                <button type="submit" class="search-button">
+                    <img src="/src/img/search.svg">
+                </button>
+                </form> 
+            </div>     
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="add-page">
+                    <h2>ADAUGĂ O EXPRESIE</h2>
+                    <form action="" id="the-form" method="post" class="add-form">
+                        <label for="expression"><b>Expresie</b></label>
+                        <textarea name="expression" placeholder="Introdu expresia" rows="1" cols="20" required></textarea>
+                    
+                        <label for="explication"><b>Explicație</b></label>
+                        <textarea name="explication" placeholder="Introdu explicația" rows="2" cols="50" required></textarea>
+
+                        <label for="example"><b>Exemplu</b></label>
+                        <textarea name="example" placeholder="Introdu un exemplul de folosire" rows="3" cols="50" required></textarea>
+                        
+                            <button type="submit">Trimite</button>      
+                    </form>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="expression-day"><h2>Expresia zilei</h2>
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>               
+                    </div>
+                </div>
+                <div class="add-expression">
+                    <h2>Poți contribui și tu la acest dicționar</h2>
+                    <a  href="/src/add.html" class="add-button">Adaugă o expresie</a>
+                </div>
+            </div>
+        </div>    
+        <footer class="thefooter">
+            <div class="info">2023 * Dicționar Urban - still working on it</div>
+        </footer>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/form.js"></script>
+</body>
+</html>
