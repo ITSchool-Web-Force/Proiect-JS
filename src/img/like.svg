@@ -4,14 +4,16 @@
 <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 	<style type="text/css"><![CDATA[
-      path {
-        stroke: #000;
-      }
+    @media (prefers-color-scheme: light) {
+        path {
+          stroke: #000;
+        }
+    }
 	  @media (prefers-color-scheme: dark) {
-		path {
-			stroke: #fff;
-		}
-      }
+        path {
+            stroke: #fff;
+        }
+    }
     ]]></style>
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>

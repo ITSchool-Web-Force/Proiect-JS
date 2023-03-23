@@ -6,7 +6,7 @@
 	<style type="text/css"><![CDATA[
     @media (prefers-color-scheme: light) {
         path {
-          stroke: #fff;
+          stroke: #000;
         }
     }
 	  @media (prefers-color-scheme: dark) {
