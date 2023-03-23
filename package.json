@@ -1,11 +1,6 @@
 {
   "source": "src/index.html",
   "browserslist": "> 5%",
-  "targets": {
-    "default": {
-      "publicUrl": "/Proiect-JS"
-    }
-  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -16,7 +11,18 @@
     "parcel": "^2.7.0",
     "push-dir": "^0.4.1"
   },
-  "dependencies": {
-    "bootstrap": "^5.2.0"
-  }
+  "name": "proiect-js",
+  "description": "Construiește un site sau o aplicație care să folosească JavaScript.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Octavian-Busuioc/Proiect-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Octavian-Busuioc/Proiect-JS/issues"
+  },
+  "homepage": "https://github.com/Octavian-Busuioc/Proiect-JS#readme"
 }
