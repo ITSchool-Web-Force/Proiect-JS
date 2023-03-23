@@ -14,7 +14,6 @@
   "name": "proiect-js",
   "description": "Construiește un site sau o aplicație care să folosească JavaScript.",
   "version": "1.0.0",
-  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Octavian-Busuioc/Proiect-JS.git"
