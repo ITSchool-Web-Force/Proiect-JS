@@ -1,3 +1,131 @@
-$enable-shadows: true;
-$enable-gradients: true;
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@200;800&family=Lora:wght@600&family=Open+Sans:wght@700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'); 
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+.navbar-toggler {
+    font-size:3ch;
+    border: none;
+}
+.bg-img {
+  background-image: url("../photo/imageedit_5_9735788291.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-height: max-content;
+  padding-bottom: 10rem;
+}
+.navbar-nav {
+  font-size: 2.5ch;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  overflow: hidden;
+  background-color: transparent;
+}
+.navbar-nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 0.87rem 1rem;
+  text-decoration: none;
+  font-size: 2.5ch;
+}
+.navbar-nav a:hover {
+  font-size: 2.5ch;
+}
+.hero {
+  position: center;
+  font-size: 3ch; 
+  color: rgb(16, 16, 17); 
+  padding: 3rem;
+}
+h1 { 
+  font-size: 4ch; 
+  color: rgb(16, 16, 17);
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 3rem;
+}
+h2 {   
+  padding: 2rem; 
+  font-size: 3ch;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+}
+p {
+  padding: 1rem; 
+  font-size: 3ch;
+  text-align: center;
+  text-align:justify;
+}
+footer p {
+  font-size:2ch;
+}
+.wrapper { 
+  border: 0.15rem solid #ffc107;
+  margin: 2rem auto;
+  padding: 0.3rem;
+}
+.wrapper:after,.wrapper:before {
+  content: '';
+  font-size: 2ch ;
+  color: #111;
+  background: #fff }      
+
+.description {
+  font-size: 0.87rem;
+}
+.rotate {
+  border-radius: 50%;
+  width: 11.25rem;
+  cursor: ns-resize;
+}
+.cookie-container {
+  font-size: 1ch; 
+  position: fixed; 
+  bottom:-100%; 
+  left: 0;
+  right: 0;
+  background-color: rgb(252, 196, 91);
+  color: #111;
+  padding: 0 2rem;
+  transition: 400ms;
+  box-shadow: 0 -0.1rem 1rem grey;
+}
+.cookie-container.active {
+  bottom: 0
+}
+.cookie-container a {
+  color: #111;
+}
+.cookie-btn {
+  background: #fff;
+  border: 0;
+  color: black;
+  padding: 0.75rem 3rem;
+  font-size: 3ch; 
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
