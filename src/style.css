@@ -4,6 +4,7 @@
   --primary: #3db30ecc;
   --secondary: #233bee;
   --white: #fff;
+  --danger: #ff0000;
 }
 
 
@@ -356,7 +357,7 @@ a {
 .trainers .tabs .content .frame .title {
   color: var(--secondary);
   padding: 10px 50px;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 .trainers .tabs .content .frame p{
@@ -457,6 +458,35 @@ a {
   text-align: center;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
+}
+
+.bmi-container .box-bmi .content button {
+  margin-bottom: 10px;
+}
+
+.bmi-container .box-bmi .content .calculate {
+  background: var(--secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.7rem 3rem;
+    font-size: 1.7rem;
+}
+
+.bmi-container .box-bmi .content .clear {
+  background: var(--danger);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.7rem 3rem;
+  font-size: 1.7rem;
+}
+
+.bmi-container .box-bmi .result {
+  font-size: 2rem;
+  padding: 10px 10px;
 }
 
 /* end bmi calculator */

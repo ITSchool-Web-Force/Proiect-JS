@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
 <!-- navigation -->
@@ -248,7 +249,7 @@
       <div class="content">
         <div class="frame">
           <div class="box"></div>
-          <div class="title">Henry - you trainer for weightlifting</div>
+          <div class="title">Henry - you trainer for weightlifting and strongman</div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             laborum!
@@ -261,7 +262,7 @@
         <div class="frame">
           <div class="box"></div>
           <div class="title">
-            Mark - you trainer for fitness and body sculpting
+            Mark - you trainer for body sculpting and contests
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
@@ -374,15 +375,15 @@
         <label for="weight">Height (cm)</label>
         <input id="height" type="number" />
       </div>
-      <button onclick="calcBmi()" id="calculate" class="">
+      <button id="calculate" class="calculate">
         Calculate BMI
       </button>
-      <button onclick="reload()" id="clear" class="">Clear</button>
+      <button onclick="reload()" id="clear" class="clear">Clear</button>
     </div>
     <div class="result">
       <h4 id="heading"></h4>
       <p id="bmi-output"></p>
-      <p id="message"></p>
+      <p class="comment"></p>
     </div>
   </div>
 </section>
@@ -523,7 +524,7 @@
 </section>
 <!-- end footer -->
 
-<script type="module" src="./index.js"></script>
+
 
 <!-- swiper js-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -591,5 +592,6 @@
     // console.log({error, data});
   });
 </script>
+<script type="module" src="./index.js"></script>
   </body>
 </html>

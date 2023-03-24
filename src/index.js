@@ -24,11 +24,10 @@ document.onclick = function (e) {
 let imageNumber = 1;
 displayPic(imageNumber);
 
-
 /*without this 2 window. lines it throws an error. function must be
  from global scope to module scope*/
- window.nextpic = nextpic;
- window.currentPic = currentPic;
+window.nextpic = nextpic;
+window.currentPic = currentPic;
 
 function nextpic(nr) {
   displayPic((imageNumber += nr));
@@ -119,36 +118,59 @@ trainerButtons.forEach((button) => {
 [weight(kg) / height(cm)/ height(cm)] x 10,000
 */
 
-
 /*same as before withe slider, without this window. line it throws an error. function must be
  from global scope to module scope*/
-window.calcBmi = calcBmi;
 
-function calcBmi() {
-  let weight = document.getElementById("weight").value;
-  let height = document.getElementById("height").value;
+const btn = document.getElementById("calculate");
+
+btn.addEventListener("click", function () {
+  let weight = document.querySelector("#weight").value;
+  let height = document.querySelector("#height").value;
 
   let bmi = (weight / height / height) * 10000;
 
-  // console.log(bmi);
+  //console.log(bmi);
 
-  document.getElementById("heading").innerHTML = "Your BMI is:";
-  document.getElementById("bmi-output").innerHTML = bmi.toFixed(2);
+  if (height == "" || weight == "") {
+    alert("Please fill out the input fields!");
+    return;
+  }
+
+  document.querySelector("#heading").innerText = "Your BMI is:";
+  document.querySelector("#bmi-output").innerText = bmi.toFixed(2);
+
+  let status = '';
+
+  // rewriting the color of paragraf with class comment using DOM
+  let comment = document.querySelector('.comment');
 
   if (bmi <= 25) {
-    document.getElementById("message").innerHTML =
-      "You are within the healthy weight range";
-  } else if (bmi >= 25 && bmi <= 30) {
-    document.getElementById("message").innerHTML =
-      "You are within the overweight range";
+    status = "the healthy weight range";
+    comment.style.color ="green";
+  } else if (bmi >= 25 && bmi <= 30.50) {
+    status = "the overweight range";
+    comment.style.color ="red";
   } else if (bmi >= 31) {
-    document.getElementById("message").innerHTML =
-      "You are within the obesity range";
+    status = "the obesity range";
+    comment.style.color ="red";
   }
-}
 
+  document.querySelector(".comment").innerHTML = `Comment: you are within ${status}`;
+
+  //console.log(status);
+});
+
+window.reload = reload;
 function reload() {
   window.location.reload();
 }
 
+// hashchange event, does the same thing as with the id
 
+const hashtags = document.querySelectorAll(
+  "pricing, contact, testimonials, contact, trainers"
+);
+
+window.addEventListener("hashchange", () => {
+  hashtags.textContent = window.location.hash;
+});
