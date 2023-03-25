@@ -1,8 +1,8 @@
-const modal = document.getElementById("modal");
-const closeBtn = document.getElementsByClassName("close")[0];
-const subscribeForm = document.getElementById("subscribe-form");
-const emailInput = document.getElementById("email");
-const subscribeBtn = document.getElementById("subscribe-btn");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close");
+const subscribeForm = document.querySelector(".subscribe-form");
+const emailInput = document.querySelector(".subscribe-input");
+const subscribeBtn = document.querySelector(".subscribe-btn");
 const modalShown = localStorage.getItem("modalShown");
 
 if (!modalShown) {
@@ -18,15 +18,18 @@ subscribeForm.addEventListener("submit", function (event) {
     modal.style.display = "none";
     const subscribeEvent = new Event("userSubscribed");
     document.dispatchEvent(subscribeEvent);
+    //localStorage.setItem("modalShown", "true");
   }
 });
 
-closeBtn.onclick = function () {
+closeBtn.addEventListener("click", function () {
   modal.style.display = "none";
-};
+});
 
-window.onclick = function (event) {
+window.addEventListener("click", function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-};
+});
+
+localStorage.removeItem("modalShown");

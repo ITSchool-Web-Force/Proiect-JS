@@ -331,7 +331,7 @@ label {
   font-weight: bold;
 }
 
-input[type="email"] {
+.subscribe-input {
   display: block;
   width: 100%;
   padding: 0.4rem 0.5rem;
@@ -342,7 +342,7 @@ input[type="email"] {
   font-family: "Inter", sans-serif;
 }
 
-button[type="submit"] {
+.subscribe-btn {
   background-color: var(--gold);
   color: white;
   padding: 0.3rem 0.6rem;
@@ -356,10 +356,10 @@ button[type="submit"] {
   align-self: flex-end;
 }
 
-button[type="submit"]:hover {
+.subscribe-btn:hover {
   background-color: #000;
 }
-#subscribe-form {
+.subscribe-form {
   display: flex;
   flex-direction: column;
 }
