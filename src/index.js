@@ -76,6 +76,7 @@ closeModal.addEventListener("click", () => {
   modal.close();
 });
 
+
 // update copyright year
 
 const yearSpan = document.querySelector("#current-year");

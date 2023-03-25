@@ -5,6 +5,7 @@
   --secondary: #233bee;
   --white: #fff;
   --danger: #ff0000;
+  --border-inputs-form: 5px solid var(--primary);
 }
 
 
@@ -138,7 +139,7 @@ a {
 .dots {
   text-align: center;
   position: absolute;
-  bottom: 15%;
+  bottom: 16%;
   left: 45%;
   background: rgba(107, 105, 105, 0.8);
   padding: 5px 10px;
@@ -249,6 +250,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 5em;
+  z-index: 1;
 }
 
 .modal .close-button {
@@ -364,10 +366,63 @@ a {
   font-size: 1.8em;
 }
 
+.trainers .tabs .content .box .intro {
+  height: 70px;
+  padding: 6px; 
+  position: absolute;
+  bottom: 0px;
+  background: rgba(108, 104, 104, 0.5);
+  color: #ffffff;
+}
+
+.trainers .tabs .content .box .intro h3 {
+  margin: 10px;
+  font-size: 40px;
+}
+
+.trainers .tabs .content .box .intro p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trainers .tabs .content .box:hover {
+  cursor: pointer;
+}
+
+.trainers .tabs .content .box:hover .intro {
+  height: 150px;
+  bottom: 0px;
+  background: rgba(108, 104, 104, 0.5);
+  transition: .5s;
+}
+
+.trainers .tabs .content .box:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.trainers .tabs .content .box:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
 /* end trainers */
 
 /* contact */
 
+.contact input {
+  border: var(--border-inputs-form);
+}
+
+.contact select {
+  border: var(--border-inputs-form);
+}
+
+.contact textarea {
+  border: var(--border-inputs-form);
+}
 
 .contact .row {
   display: flex;
@@ -644,6 +699,10 @@ footer .footer-container .box a:hover {
 /*responsive */
 @media (max-width: 375px) {
 
+  .nav-menu {
+    top: 8rem;
+  }
+
   .contact .row .image {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -661,10 +720,7 @@ footer .footer-container .box a:hover {
     height: 17vh;
   }
 
-  .dots {
-    bottom: 75%;
-    left: 35%;
-  }
+
 
   .container .button {
     top: 14%;
@@ -672,6 +728,11 @@ footer .footer-container .box a:hover {
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
+
+  .nav-menu {
+    top: 8rem;
+  }
+
 
   .contact .row .image {
     display: grid;
@@ -687,8 +748,8 @@ footer .footer-container .box a:hover {
   }
 
   .dots {
-    bottom: 75%;
-    left: 40%;
+    bottom: 76%;
+    left: 28%;
   }
 
   .container .button {
@@ -698,18 +759,23 @@ footer .footer-container .box a:hover {
 
 @media (min-width: 429px) and (max-width: 768px) {
 
-  
   .contact .row .image {
 
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
+  
 }
 
 @media (max-width: 768px) {
 
+  
     .review .review-slider {
         z-index: -1;
+      }
+
+      .bmi-container .box-bmi {
+        min-width: 300px;
       }
 
   .nav-menu {
@@ -748,16 +814,26 @@ footer .footer-container .box a:hover {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .dots {
+    bottom: 78%;
+    left: 30%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+  .nav-menu {
+    top: 5rem;
+  }
+
   .container .pic img {
     height: 40vh;
   }
 
   .dots {
     bottom: 56%;
-    left: 45%;
+    left: 40%;
   }
 
   .container .button {
