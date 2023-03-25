@@ -9,9 +9,9 @@
     <title>Dicționar Urban</title>
 </head>
 <body>
-    <div class="thebody">
-        <header class="theheader">
-            <div class="wrapper">
+    <div class="the-body">
+        <header class="the-header">
+            <div class="the-wrapper">
                 <div class="logo">
                     <a href="/src/index.html"><img src="/src/img/logo.svg" class="logo" alt="logo"/></a>
                 </div>
@@ -32,7 +32,7 @@
                 <form id="search-form" method="get" action="">
                 <input class="search-input" type="search" placeholder="Caută...">
                 <button type="submit" class="search-button">
-                    <img src="/src/img/search.svg">
+                    <img src="/src/img/search.svg" alt="search button"/>
                 </button>
                 </form> 
             </div>     
@@ -43,15 +43,15 @@
                     <h2>ADAUGĂ O EXPRESIE</h2>
                     <form action="" id="the-form" method="post" class="add-form">
                         <label for="expression"><b>Expresie</b></label>
-                        <textarea name="expression" placeholder="Introdu expresia" rows="1" cols="20" required></textarea>
+                        <textarea id="expression" placeholder="Introdu expresia" rows="1" cols="20" required></textarea>
                     
                         <label for="explication"><b>Explicație</b></label>
-                        <textarea name="explication" placeholder="Introdu explicația" rows="2" cols="50" required></textarea>
+                        <textarea id="explication" placeholder="Introdu explicația" rows="2" cols="50" required></textarea>
 
                         <label for="example"><b>Exemplu</b></label>
-                        <textarea name="example" placeholder="Introdu un exemplul de folosire" rows="3" cols="50" required></textarea>
+                        <textarea id="example" placeholder="Introdu un exemplul de folosire" rows="3" cols="50" required></textarea>
                         
-                            <button type="submit">Trimite</button>      
+                        <button type="submit">Trimite</button>      
                     </form>
                 </div>
             </div>
@@ -77,11 +77,11 @@
                 </div>
             </div>
         </div>    
-        <footer class="thefooter">
+        <footer class="the-footer">
             <div class="info">2023 * Dicționar Urban - still working on it</div>
         </footer>
     </div>
-    <script src="/src/index.js"></script>
-    <script src="/src/form.js"></script>
+    <script type="module" src="/src/index.js"></script>
+    <script type="module" src="/src/form.js"></script>
 </body>
 </html>

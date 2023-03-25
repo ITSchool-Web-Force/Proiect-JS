@@ -1,10 +1,10 @@
 //Meniu
 const openNav = document.querySelector('.menu-bar button');
 const closeNav = document.querySelector('.close-nav button');
-const Navbar = document.querySelector('.navbar');
+const theNavbar = document.querySelector('.navbar');
 
 window.addEventListener("resize", (event) => {        
-        if(Navbar.classList.contains('show')) {
+        if(theNavbar.classList.contains('show')) {
             showHide();
         } 
 });
@@ -20,5 +20,5 @@ closeNav.addEventListener("click", (event) => {
 });
 
 function showHide() {
-    Navbar.classList.toggle('show');
+    theNavbar.classList.toggle('show');
 }

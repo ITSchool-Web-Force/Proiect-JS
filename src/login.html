@@ -9,9 +9,9 @@
     <title>Dicționar Urban</title>
 </head>
 <body>
-    <div class="thebody">
-        <header class="theheader">
-            <div class="wrapper">
+    <div class="the-body">
+        <header class="the-header">
+            <div class="the-wrapper">
                 <div class="logo">
                     <a href="/src/index.html"><img src="/src/img/logo.svg" class="logo" alt="logo"/></a>
                 </div>
@@ -32,7 +32,7 @@
                 <form id="search-form" method="get" action="">
                 <input class="search-input" type="search" placeholder="Caută...">
                 <button type="submit" class="search-button">
-                    <img src="/src/img/search.svg">
+                    <img src="/src/img/search.svg" alt="search button"/>
                 </button>
                 </form> 
             </div>     
@@ -43,10 +43,10 @@
                     <h2>AUTENTIFICĂ-TE</h2>
                     <form action="" id="the-form" method="post" class="login-form">
                         <label for="uname"><b>Nume de utilizator</b></label>
-                        <input type="text" placeholder="Introdu numele de utilizator" name="uname" required>
+                        <input id="uname" type="text" placeholder="Introdu numele de utilizator"  required>
                     
-                        <label for="psw"><b>Parolă</b></label>
-                        <input type="password" placeholder="Introdu parola contului" name="psw" required>
+                        <label for="pass"><b>Parolă</b></label>
+                        <input id="pass" type="password" placeholder="Introdu parola contului" required>
                         
                         <div class="login-password">
                             <button type="submit">Login</button>      
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>    
-        <footer class="thefooter">
+        <footer class="the-footer">
             <div class="info">2023 * Dicționar Urban - still working on it</div>
         </footer>
     </div>
