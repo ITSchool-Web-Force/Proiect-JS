@@ -147,12 +147,15 @@ textarea {
     resize: vertical;
     border-radius: 0.3rem;
 }
-.btn-group {
+.additional-fields, .btn-group {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     align-self: center;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+}
+.additional-field {
+    height: 10rem;
 }
 #facebook, #instagram {
     height: 2rem;
