@@ -140,16 +140,30 @@ main {
 .armchair-group {
   border-block-end: 0;
 }
-.products {
-  max-width: 25vw;
-  height: auto;
-  cursor: pointer;
-}
+
 .prod-area {
   max-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.prod-area img {
+  max-width: 25vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.diamond-det-img,
+.angra-det-img,
+.lapiaz-det-img,
+.heritage-det-img,
+.bonsai-det-img,
+.fortuna-det-img,
+.versailles-det-img,
+.odette-det-img,
+.imperfectio-det-img {
+  display: none;
 }
 .prod-text {
   display: flex;
@@ -169,6 +183,10 @@ button {
   padding: 0.1rem 0.5rem;
   border: none;
   cursor: pointer;
+}
+button:hover,
+button:focus {
+  background-color: #000;
 }
 .featured-title {
   color: #fff;
@@ -234,7 +252,7 @@ footer {
   height: auto;
 }
 
-@media (min-width: 280px) and (max-width: 374px) {
+@media (min-width: 280px) and (max-width: 449px) {
   .main-group {
     padding-inline: 0.5rem;
   }
@@ -250,6 +268,16 @@ footer {
   }
   .featured-title {
     font-size: 0.75rem;
+  }
+  h3 {
+    font-size: 0.5rem;
+  }
+  p {
+    font-size: 0.3rem;
+  }
+  button {
+    font-size: 0.3rem;
+    padding: 0.05rem 0.25rem;
   }
   .feature-group {
     gap: 1rem;
@@ -279,8 +307,6 @@ footer {
     background-color: var(--gold);
     font-size: 0.5rem;
     padding: 0.05rem 0.25rem;
-    border: none;
-    cursor: pointer;
   }
 }
 @media (min-width: 801px) {
