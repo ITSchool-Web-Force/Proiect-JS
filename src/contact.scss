@@ -144,12 +144,7 @@ textarea {
     border-radius: 0.3rem;
 }
 .additional-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-self: center;
-    font-size: 1.2rem;
-    width: 80%;
+    display: none;
 }
 .btn-group {
     display: flex;
@@ -256,6 +251,14 @@ footer {
     #logo {
         height: 12vh;
         padding: 1rem;
+    }
+    .additional-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-self: center;
+        font-size: 1.2rem;
+        width: 80%;
     }
 }
 @media (min-width: 1000px) {
