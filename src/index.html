@@ -19,7 +19,7 @@
     <div class="wrapper">
         <header>
           <div class="logo">
-            <a href="#">
+            <a href="index.html">
               <img id="logo" src="./images/logo.jpg" alt="logo image">
             </a>
           </div>
@@ -27,16 +27,44 @@
             <ul>
               <li><a href="blog.html"class="menu-item products">blog</a></li>
               <li><a href="contact.html">contact</a></li>
+              <li><a href="shopping.html">
+                    <img class="shopping-cart" src="./images/shopping_cart.png" alt="logo image">
+                  </a>
+              </li>
             </ul>
           </nav>
         </header>
         <main>
           <div id="main-image">
-            <img src="./images/background.jpg">
+            <img id="image1" src="./images/background.jpg" alt="background image">
           </div>
+          <div class="container">
+            <div class="tabs">
+              <h3><a class="tab" href="#our-products">produsele noastre</a></h3>
+              <h3><a class="tab" href="#ideas">idei de cadouri</a></h3>
+              <h3><a class="tab" href="#accessories">accesorii</a></h3>
+              <h3><a class="tab" href="#reviews">parerile clientilor</a></h3>
+            </div>
+          </div>
+          <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            
+            <ul class="slides-container" id="slides-container">
+              <li class="slide" id="slide1">a</li>
+              <li class="slide" id="slide2">b</li>
+              <li class="slide" id="slide3">c</li>
+              <li class="slide" id="slide4">d</li>
+            </ul>
+          </section>
           <section>
             <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
-            <p id="our-products">Produsele noastre</p>
+            <p id="our-products" #products>Produsele noastre</p>
             <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
           </section>
           <div class="product-container">
@@ -79,13 +107,13 @@
           </div>
           <section>
             <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
-            <p>idei de cadouri</p>
+            <p id="ideas" #ideas>idei de cadouri</p>
             <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
           </section>
           <div class="product-container">
             <div class="candles">
               <img class="candles-image" id="candles8" src="./images/seturi.jpg" alt="candles image">
-              <p class="image-text">Set cadou</p>
+              <p class="image-text" #sets >Set cadou</p>
               <p class="image-price">65 RON</p>
               <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
             </div>
@@ -122,7 +150,7 @@
           </div>
           <section class="accesorii">
             <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
-            <p>Accesorii</p>
+            <p id="accessories" #accessories>Accesorii</p>
             <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
           </section>
           <div class="product-container">
@@ -161,6 +189,25 @@
               <p class="image-text">Tavite</p>
               <p class="image-price">20 RON</p>
               <img class="shopping-cart" src="./images/shopping_cart.png" alt="shopping cart">
+            </div>
+          </div>
+          <section class="clients-reviews-title">
+            <img class="leaf" src="./images/leaf.jpg" alt="leaf image">
+            <p id="reviews">Parerile clientilor</p>
+            <img class="turned-leaf" src="./images/leaf.jpg" alt="leaf image">
+          </section>
+          <div class="reviews-nav">
+            <div class="review">
+              <p class="client-name">Raluca C., Bucuresti - 22.01.2023</p>
+              <p class="review-text">Am facut o surpriza prietenei mele, cand i-am oferit de ziua ei aceste lumanari. Sigur ca nu se astepta, i-au placut foarte mult.</p>
+            </div>
+            <div class="review">
+              <p class="client-name">Alina B., Bucuresti - 14.02.2023</p>
+              <p class="review-text">Am primit comanda la timp, lumanarile miros foarte frumos si arata foarte bine, impachetate cu atentie.</p>
+            </div>
+            <div class="review">
+              <p class="client-name">Cristina G., Bucuresti - 27.12.2022</p>
+              <p class="review-text">Am oferit nasilor de cununie aceste lumanari, ne-am amuzat copios (am comandat setul barbat-femeie).</p>
             </div>
           </div>
         </main>
