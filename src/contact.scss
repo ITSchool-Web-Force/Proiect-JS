@@ -45,7 +45,6 @@ main h1 {
     margin-inline: auto;
     color:green;
     font-family: 'Jost', 'Nunito Sans', 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
-    font-size: 1rem;
     font-weight: bold;
     margin: 0;
     text-align: center;
@@ -105,9 +104,6 @@ main {
     gap: 1rem;
     padding-block-end: 5rem;
 }
-.turned-leaf {
-    transform: rotateY(180deg);
-}
 #facebook, #instagram {
     height: 2rem;
 }
@@ -153,6 +149,7 @@ textarea {
     gap: 1rem;
     align-self: center;
     font-size: 1.2rem;
+    width: 80%;
 }
 .btn-group {
     display: flex;
