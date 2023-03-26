@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <img class="logo" src="imagini/logo.png" alt="">
+  <img class="banner" src="imagini/bannercontact.jpg" alt="">
 
     <!--Navigarea in pagini-->
     <nav class="navbar">
@@ -19,14 +19,14 @@
       <div class="subnavbar">
         <button class="subnavbarbtn">Categorii produse <i class="fa fa-caret-down"></i></button>
         <div class="subnavbar-content">
-          <a href="scandura.html">Scandura</a>
+          <a href="cherestea.html">Cherestea</a>
           <a href="adezivi.html">Adezivi</a>
           <a href="ciment.html">Ciment</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
 
-      <i style="font-size:40px" class="fa">&#xf07a;</i>
+      <i class="cart" style="font-size:40px" class="fa">&#xf07a;</i>
     </nav>
 
     <section class="contact-page">
@@ -51,40 +51,44 @@
 
       </div>
 
-      <div class="form">
-    
-          <div class="form-column">
-              <div class="form-row">
-                  <div class="nume">
-                    <input type="text" name="nume" placeholder="Nume">
-                  </div>
-
-                  <div class="prenume">
-                    <input type="text" name="prenume" placeholder="Prenume">
-                  </div>
-              </div>
-
-              <div class="form-row">
-                  <div class="email">
-                    <input type="text" name="email" placeholder="Email">
-                  </div>
-
-                  <div class="telefon">
-                    <input type="text" name="telefon" placeholder="Telefon">
-                  </div>
-            </div>
-
-
-            </div>
-        </div>
+      <div class="container">
         
-       
-
-       
+         
+          <input type="text" id="nume" name="nume" placeholder="Nume">
+      
+    
+          <input type="text" id="nume" name="nume" placeholder="Prenume">
+      
+          
+          <select id="judet" name="judet">
+            <option value="bucuresti">Bucuresti</option>
+            <option value="ilfov">Ilfov</option>
+            <option value="dambovita">Dambovita</option>
+          </select>
+      
+         
+          <textarea id="subiect" name="subiect" placeholder="Subiect" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+          
+      </div>      
+        
 
       </div>
     </section>
 
+
+    <footer class="footer">
+      <div class="info">
+         <div class="contact">
+            <a style="color: black; text-decoration: none;" href="mailto:depozitmaterialeconstructii@yahoo.com" target="_top">E-mail: materialeconstructii@yahoo.com</a>
+            <a style="color: black; text-decoration: none;" href="tel:0772144716">Telefon: 0772144716</a>
+            <p>Locatie: Sabareni Strada principala nr 131 BIS</p>
+         </div>
+
+        <p class="drepturi"> © 2023 Angel & Costi SRL</p>
+    </div>
+    </footer>
 
 </body>
 </html>

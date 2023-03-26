@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Crimson+Text:ital@1&family=Poppins:wght@400;500&display=swap');
+
+
+
+.cart {
+  display: none;
+}
+
+.img-depo {
+  width: 100%;
+}
+/*Navigarea in pagini*/
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 166, 0, 0.845);
+  border-radius: 25px;
+  margin-block-start: 1rem;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.subnavbar {
+  float: left;
+  overflow: hidden;
+  text-align: right;
+}
+
+
+.subnavbar .subnavbarbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover, .subnavbar:hover .subnavbarbtn {
+  background-color: rgba(255, 166, 0, 0.845);
+}
+
+
+.subnavbar-content {
+   display: none;
+   position:absolute;
+  background-color:rgba(255, 166, 0, 0.845);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ 
+}
+
+
+.subnavbar-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnavbar-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnavbar:hover .subnavbar-content {
+  display: block;
+}
+
+
+.banner {
+  width: 100%;
+  margin-block-start: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+  margin-block-start: 3rem;
+  font-weight: bolder;
+}
+
+
+.footer {
+  background-color: rgb(233, 233, 233);
+  margin-block-start: 4rem;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+
+.imgprod {
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+/*  DESKTOP */
+
+
+@media (min-width:700px) {
+
+  .navbar {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.845);
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgb(255, 202, 159);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: rgba(255, 166, 0, 0.845);
+    color: white;
+  }
+
+  .subnavbar-content {
+   
+    margin-inline-start: 12rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+
+
+   .footer {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  .banner {
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    height: 400px;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+
+  main {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imgprod {
+  width: 100px;
+}
+
+.sectiune-produse {
+  
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+}
+
+
+
+@media (min-width:800px) {
+
+  .navbar {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.845);
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgb(255, 202, 159);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: rgba(255, 166, 0, 0.845);
+    color: white;
+  }
+
+  .subnavbar-content {
+   
+    margin-inline-start: 12rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+
+
+   .footer {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  .banner {
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    height: 400px;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+ 
+
+  main {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imgprod {
+  width: 100px;
+}
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+}
+
+
+@media (min-width:1090px) {
+
+  .navbar {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.845);
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgb(255, 202, 159);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: rgba(255, 166, 0, 0.845);
+    color: white;
+  }
+
+  .subnavbar-content {
+   
+    margin-inline-start: 12rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+
+
+   .footer {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  .banner {
+    width: 80%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    height: 400px;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+ 
+
+  main {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imgprod {
+  width: 200px;
+}
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+}
+

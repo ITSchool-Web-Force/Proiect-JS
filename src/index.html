@@ -7,33 +7,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bungee+Hairline&family=Bungee+Spice&family=Cormorant+SC&family=Crimson+Text:ital@1&family=Diplomata+SC&family=Emblema+One&family=Gidugu&family=IM+Fell+Great+Primer+SC&family=Kumar+One&family=Nova+Oval&family=Poppins:wght@400;500&family=Suravaram&family=Tourney:wght@200&display=swap" rel="stylesheet">
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     
-    <!--LOGO-->
-    <img class="logo" src="imagini/logo.png" alt="">
 
+    <img class="banner" src="imagini/banner2.jpg" alt="">
     <!--Navigarea in pagini-->
     <nav class="navbar">
       <a href="index.html">Acasa</a>
       <div class="subnavbar">
         <button class="subnavbarbtn">Categorii produse <i class="fa fa-caret-down"></i></button>
         <div class="subnavbar-content">
-          <a href="scandura.html">Scandura</a>
+          <a href="cherestea.html">Cherestea</a>
           <a href="adezivi.html">Adezivi</a>
           <a href="ciment.html">Ciment</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
-
       <i class="cart" style="font-size:40px" class="fa">&#xf07a;</i>
     </nav>
 
-    <img class="banner" src="imagini/banner2.jpg" alt="">
 
 
     <h1>DEPOZITUL NOSTRU</h1>
+
+<div class="galerie-video">
+
+  <img class="img2"  src="imagini/adezivi.jpg" alt="">
+
+    <div id="locatie" class="hidden">
+      <video>
+        <source
+          src="/depozit.mp4"
+          type="video/webm" />
+        <p>
+          <a href="/depozit.mp4"></a>
+        </p>
+      </video>
+
+      <button class="adresa" id="try">Adresa noastra</button>
+      <p style="font-size: 18px; font-family: 'Courier New', Courier, monospace; text-align: center;" id="text"></p>
+    </div>
+
+    
+    
+
+    <img class="img1"  src="imagini/fier.jpg" alt="">
+
+  </div>
+
 
     <div class="galerie">
       <img class="img-depo" src="imagini/img1.jpg">
@@ -48,40 +72,64 @@
 
     <h1>PRODUSE NOI</h1>
 
-    <main class="sectiune-produse">
+    <main>
+      <div id="container">
      
-        <div class="produse">
-            <div class="scandura">
-              <img class="scandura" src="imagini/scandura-constructii-3m.jpg" alt="">
-              <p style="text-align: center; font-size: 17px;">Scandura 3m</p>
-              <p style="font-size:20px;font-weight: bolder; text-align: center; ">975,00 LEI</p>
-              <input class="cos" type="button" value="Adauga in cos">
-            </div>
+      <div class="sectiune-produse">
 
-            <div class="grinda">
-              <img  class="scandura" src="imagini/grinda.png" alt="">
-              <p style="text-align: center; font-size: 17px;">Grinda 8x8x300 Cm</p>
-              <p style="font-size:20px;font-weight: bolder; text-align: center;">19,50 LEI</p>
-              <input class="cos" type="button" value="Adauga in cos">
-            </div>
+          <div class="produse">
+
+              <img class="imgprod" src="imagini/adeziv1.jpg" alt="">
+              <p style="text-align: center;">Cherestea uscată Konsta <br>46x250x4000 mm</p>
+              <h2 style="text-align: center;">128,00 lei/ buc</h2>
+              <button class="cos">
+                <span>Adauga in cos</span>
+              </button>
           </div>
 
-        <div class="produse">
-            <div class="scandura">
-              <img class="scandura" src="imagini/adeziv.jpg" alt="">
-              <p style="text-align: center; font-size: 17px;">Adeziv pentru polistiren expandat si grafitat</p>
-              <p style="font-size:20px;font-weight: bolder; text-align: center;">29,30 LEI</p>
-              <input class="cos" type="button" value="Adauga in cos">
-            </div>
-
-            <div class="ciment">
-              <img  class="scandura" src="imagini/ciment.png" alt="">
-              <p style="text-align: center; font-size: 17px; margin-top:1.4rem;">Ciment Romcim Ultra, gri, interior/exterior, 40 kg</p>
-              <p style="font-size:20px;font-weight: bolder; text-align: center; margin-top: 2.4rem">35,50 LEI</p>
-              <input class="cos" type="button" value="Adauga in cos">
-            </div>
+          <div class="produse">
+              <img class="imgprod" src="imagini/adeziv2.jpg" alt="">
+              <p style="text-align: center;">Cherestea verde <br>24x200x4000 mm</p>
+              <h2 style="text-align: center;">48,00 lei/ buc</h2>
+              <button class="cos">
+                <span>Adauga in cos</span>
+              </button>
           </div>
+
+    </div>  
+
+    <div class="sectiune-produse">
+
+      <div class="produse">
+
+          <img class="imgprod" src="imagini/adeziv5.jpg" alt="">
+          <p style="text-align: center;">Cherestea uscată <br> 22x150x4000 mm</p>
+          <h2 style="text-align: center;">40,00 lei/ buc</h2>
+          <button class="cos">
+            <span>Adauga in cos</span>
+          </button>
+
+      </div>
+
+      <div class="produse">
+          <img class="imgprod" src="imagini/adeziv6.jpg" alt="">
+          <p style="text-align: center;">Cherestea uscată<br> 46x250x3000 mm</p>
+          <h2 style="text-align: center;">99,00 lei/ buc</h2>
+          <button class="cos">
+            <span>Adauga in cos</span>
+          </button>
+      </div>
+
+
+</div>  
+</div>
+        
     </main>
+
+
+    
+
+      
 
     <footer class="footer">
       <div class="info">
