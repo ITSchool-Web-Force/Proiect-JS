@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('load', () => {
     let menu = document.querySelector('.nav_menu');
     let menu_toggle = document.querySelector('.mobile-menu-icon');
     let menu_toggle_icon = document.querySelector('.mobile-menu-icon ion-icon');
@@ -102,3 +102,18 @@ async function fetchPoints() {
   }
 }
 fetchPoints();
+
+const element = document.querySelector('.btn-primary');
+element.addEventListener('mouseover', function() {
+  element.style.backgroundColor = 'yellow';
+});
+
+const element1 = document.querySelector('.btn-primary');
+element1.addEventListener('click', function() {
+  let isOk = confirm("SOLD OUT");
+  if (isOk) {
+    element1.innerText = "Alright";
+  } else {
+    element1.innerText = "=(";
+  }
+});
