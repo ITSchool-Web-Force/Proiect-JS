@@ -358,6 +358,6 @@ iframe {
 
 .img-modal {
   padding-block-start: 0.5rem;
-  
+  max-width: 70%;
   
 }
