@@ -16,7 +16,6 @@ body {
   background-color: rgb(255, 255, 255);
   cursor: none;
   overflow-x: hidden;
-  max-width: 100vw;
 }
 header {
   position: fixed;
@@ -263,7 +262,7 @@ main {
     margin-inline-start: 9.5%;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 59rem) {
   .fitness-img {
     width: 30rem;
   }
@@ -283,7 +282,7 @@ main {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1160px) {
+@media (min-width: 72rem) {
   .gym-png {
     width: 25rem;
   }
@@ -306,7 +305,7 @@ main {
     font-size: 2rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 84rem) {
   .swiper-slide img {
     width: 19rem;
     margin-inline-start: 3%;

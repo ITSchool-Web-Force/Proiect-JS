@@ -12,19 +12,6 @@ addEventListener("click", () => {
   navMenu.classList.remove("active")
 }));
 
-ScrollReveal({
-  reset: true,
-  distance: '60px',
-  duration: 2500,
-  delay: 400
-});
-
-ScrollReveal().reveal('.goals , .stronger', {delay: 300, origin: 'left'});
-ScrollReveal().reveal('.protein-powder', {delay: 300, origin: 'right'});
-ScrollReveal().reveal('.swiper-wrapper', {delay: 300, origin: 'bottom'});
-ScrollReveal().reveal('.gym-info , .trainers , .health-clubs', {delay: 100, origin: 'left'});
-ScrollReveal().reveal('.gym-png , .one-png , .hard-png', {delay: 100, origin: 'right'})
-
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
