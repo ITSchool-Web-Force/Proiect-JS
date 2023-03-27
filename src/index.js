@@ -166,10 +166,10 @@ function reload() {
   window.location.reload();
 }
 
-// hashchange event, does the same thing as with the id
+// hashchange event, does the same thing as with the id but it doesn t refresh the page
 
 const hashtags = document.querySelectorAll(
-  "pricing, contact, testimonials, contact, trainers"
+  "schedule, pricing, contact, testimonials, contact, trainers"
 );
 
 window.addEventListener("hashchange", () => {
