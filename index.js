@@ -13,6 +13,19 @@ const options = document.querySelectorAll(".medic");
 const modals = document.querySelectorAll(".modal");
 let currentSlide = 0;
 
+const btnText = document.querySelector(".continue");
+const text = document.querySelector(".continue-text");
+
+btnText.addEventListener("click", function () {
+  if (text.classList.contains("hidden")) {
+    text.classList.remove("hidden");
+    btnText.textContent = "Ascunde";
+  } else {
+    text.classList.add("hidden");
+    btnText.textContent = "Mai departe";
+  }
+});
+
 options.forEach((option, index) => {
   option.addEventListener("click", () => {
     modals.forEach((modal) => {
@@ -43,7 +56,7 @@ document.addEventListener("keydown", function (e) {
 
 overlay.addEventListener("click", function () {
   overlay.classList.add("hidden");
- let currentModal = document.querySelector(".modal:not(.hidden)");
+  let currentModal = document.querySelector(".modal:not(.hidden)");
   if (currentModal) {
     currentModal.classList.add("hidden");
   }

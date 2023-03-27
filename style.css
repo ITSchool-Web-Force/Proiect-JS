@@ -177,20 +177,29 @@ main {
   background: transparent;
   padding-inline-start: 1rem;
   padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 
+.continue {
+  width: 30%;
+  margin-block-start: 1.5rem;
+}
+
 .servicii {
+  position: relative;
   margin-block-start: 1rem;
   background-color: var(--main-color);
-  height: auto;
   padding: 1.7rem 3rem;
   color: white;
-  /* height: 26rem; */
+  height: 25.8rem;
+  width: 15.5rem;
+  
 }
-.medici {
-  background-color: var(--main-color);
-}
+
 .titlu-servicii {
   padding: 0.5rem;
   text-align: center;
@@ -219,6 +228,19 @@ main {
   cursor: pointer;
 }
 
+.text-important {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  
+
+}
+.text-important::before{
+  content:"*"
+}
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -361,3 +383,7 @@ iframe {
   max-width: 90%;
   
 }
+
+
+
+
