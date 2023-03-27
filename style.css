@@ -177,6 +177,7 @@ main {
   background: transparent;
   padding-inline-start: 1rem;
   padding-block: 1rem;
+  
 }
 
 .servicii {
@@ -339,10 +340,11 @@ iframe {
   width: 90%;
   height: auto;
   background-color: var(--main-color);
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 0.3rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  text-align: center;
 }
 
 .title-modal {
@@ -356,4 +358,6 @@ iframe {
 
 .img-modal {
   padding-block-start: 0.5rem;
+  
+  
 }
