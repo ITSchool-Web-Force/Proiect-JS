@@ -277,6 +277,9 @@ footer {
         align-content: center;
         justify-content: center;
     }
+    .tab {
+        font-size: 0.6rem;
+    }
 }
 @media (min-width: 480px) {
     .product-container {
@@ -340,6 +343,9 @@ footer {
         justify-content: space-around;
         border-radius: 1rem;
     }
+    .tab {
+        font-size: 0.7rem;
+    }
     #footer-contact {
         display: flex;
         flex-direction: row;
@@ -382,6 +388,9 @@ footer {
     section p {
         font-size: 2rem;
         padding-block: 1.6rem;
+    }
+    .tab {
+        font-size: 1rem;
     }
 }
 @media (min-width: 1000px) {
