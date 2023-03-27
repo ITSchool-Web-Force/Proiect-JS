@@ -1,21 +1,19 @@
-
-
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieButton = document.querySelector(".cookie-btn");
 
-cookieButton.addEventListener("click", () =>{
+cookieButton.addEventListener("click", () => {
   cookieContainer.classList.remove("active");
   localStorage.setItem("cookieBannerDisplayed", "true")
 })
 
 setTimeout( () => {
-  if (!localStorage.getItem("cookieBannerDisplay"))
-  cookieContainer.classList.add("active");
+  if (!localStorage.getItem("cookieBannerDisplayed"))
+    cookieContainer.classList.add("active");
 }, 2000);
 
 const carousel = new bootstrap.Carousel('#myCarousel')
 
-const rotate = (EL) => {
+/*const rotate = (EL) => {
     let ang = 0; 
     let angStart = 0;
     let isStart = false;
@@ -50,3 +48,8 @@ const rotate = (EL) => {
   };
   
   document.querySelectorAll(".rotate").forEach(rotate);
+  */
+
+  
+
+ 

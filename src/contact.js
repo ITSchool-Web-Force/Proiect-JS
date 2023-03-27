@@ -1,16 +1,26 @@
-const form = document.getElementById("form");
-
-form.addEventListener("focusin", (event) => {
-  event.target.style.background = "orange";
-});
-
-form.addEventListener("focusout", (event) => {
-  event.target.style.background = "";
-});
 
 let button = document.querySelector('#button');
 let msg = document.querySelector('#oferta');
 
-button.addEventListener('click', ()=>{
+button.addEventListener('mouseover', () => {
   msg.classList.toggle('reveal');
 })
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);

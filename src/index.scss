@@ -1,8 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@200;800&family=Lora:wght@600&family=Open+Sans:wght@700&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'); 
- 
+
 *,
 *::before,
 *::after {
@@ -24,21 +22,22 @@ body {
   background-size: cover;
   position: relative;
   max-height: max-content;
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
+  z-index:9;
 }
 .navbar-nav {
   font-size: 2.5ch;
-  flex-direction: column;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
   align-items: flex-end;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-end;
   overflow: hidden;
   background-color: transparent;
+  justify-content: space-evenly;
 }
 .navbar-nav a {
   float: left;
@@ -128,4 +127,27 @@ footer p {
   font-size: 3ch; 
   margin-bottom: 1rem;
   cursor: pointer;
+}
+#cursor {
+  position: sticky;
+  left: 10vh;
+  top: 0;
+  z-index: 9;
+  pointer-events: none;
+  height: 3rem;
+  width: 4rem;
+}
+@media (min-width: 45rem) {
+  #cursor {
+    height: 5rem;
+    width: 7rem;
+  }
+  .bg-img {
+    padding-bottom: 10rem;
+  }
+}
+@media (min-width: 60rem) {
+  .bg-img {
+    padding-bottom: 15rem;
+  }
 }
