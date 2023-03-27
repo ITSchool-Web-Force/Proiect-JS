@@ -9,6 +9,18 @@ body {
     color: #333;
     background-color:#f4ede7;
 }
+.banner {
+    background-color: orange;
+    color: black;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    transition: font-size 4s ease-in-out;
+    transition-delay: 0.5s;
+}
+.banner:hover {
+    font-size: 1.5rem;
+}
 .wrapper {
     width: 85%;
     margin-inline: auto;

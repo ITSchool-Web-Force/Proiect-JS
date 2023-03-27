@@ -11,6 +11,20 @@ shoppingCart.forEach((event) => {
 window.onhashchange = function() {
   console.log('Hash changed!');
 }
+
+//evenimente transitionstart, transitionend
+const message = document.querySelector(".message");
+const el = document.querySelector(".banner");
+function bannerTransitions () {
+  el.addEventListener("transitionstart", () => {
+    message.textContent = "Doar luna aceasta";
+  });
+  el.addEventListener("transitionend", () => {
+    message.textContent = "";
+});
+};
+bannerTransitions();
+
 //eveniment dblclick
 const logo = document.getElementById("logo");
 logo.addEventListener("dblclick", (ev) => {
@@ -18,6 +32,7 @@ logo.addEventListener("dblclick", (ev) => {
   ev.currentTarget.style.padding = "0";
   ev.currentTarget.style.border = "1px solid black";
 });
+
 //eveniment mouseenter
 const imageText = document.getElementById("our-products");
 console.log({imageText});
@@ -25,6 +40,7 @@ imageText.addEventListener("mouseenter", (ev) => {
   ev.currentTarget.style.color = "pink";
   ev.currentTarget.style.border = "3px solid pink";
 });
+
 //eveniment mouseleave
 imageText.addEventListener("mouseleave", (ev) => {
   ev.currentTarget.style.color = "green";
