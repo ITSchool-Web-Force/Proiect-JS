@@ -175,3 +175,64 @@ const hashtags = document.querySelectorAll(
 window.addEventListener("hashchange", () => {
   hashtags.textContent = window.location.hash;
 });
+
+
+
+// creating object + display object values
+let table = [
+  {
+  "date": "27 march 2023",
+  "hour": "10:00 - 12:00",
+  "type": "yoga",
+  "mode": "online training",
+  },
+  {
+    "date": "10 april 2023",
+    "hour": "15:00 - 23:00",
+    "type": "bodybuilding",
+    "mode": "at the gym",
+  },
+  {
+    "date": "1 june 2023",
+    "hour": "06:00 - 9:00",
+    "type": "tae bo",
+    "mode": "online training",
+  }
+];
+
+// console.log(table);
+
+
+const starting = document.getElementsByClassName('starting');
+const hour = document.getElementsByClassName('hour');
+const type = document.getElementsByClassName('type');
+const mode = document.getElementsByClassName('mode');
+
+
+table.forEach((value)=> {
+  let itemP = document.createElement('P');
+  let itemPText = document.createTextNode(`${value.date}`);
+  itemP.appendChild(itemPText);
+ starting[0].appendChild(itemP);
+})
+
+table.forEach((value)=> {
+  let itemP = document.createElement('P');
+  let itemPText = document.createTextNode(`${value.hour}`);
+  itemP.appendChild(itemPText);
+ hour[0].appendChild(itemP);
+})
+
+table.forEach((value)=> {
+  let itemP = document.createElement('P');
+  let itemPText = document.createTextNode(`${value.type}`);
+  itemP.appendChild(itemPText);
+ type[0].appendChild(itemP);
+})
+
+table.forEach((value)=> {
+  let itemP = document.createElement('P');
+  let itemPText = document.createTextNode(`${value.mode}`);
+  itemP.appendChild(itemPText);
+ mode[0].appendChild(itemP);
+})
