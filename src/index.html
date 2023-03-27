@@ -1,23 +1,691 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Proiect JavaScript</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Sport Addicts</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="vh-100 d-flex flex-column">
-      <header class="navbar bg-primary bg-gradient">
-        <div class="container-fluid">
-          <h1 class="navbar-brand mb-0 text-white">Proiect JavaScript</h1>
+    <!-- navigation -->
+    <header class="header sticky">
+      <nav class="navbar">
+        <a href="#" class="nav-logo"
+          ><span>Start</span> today <i class="fa-solid fa-dumbbell"></i
+        ></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link">schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="#bmi" class="nav-link">BMI</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#trainers" class="nav-link">trainers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </header>
-      <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
-        <h2 class="display-1 text-center">15 Septembrie 2022</h2>
-      </main>
+      </nav>
+    </header>
+    <!-- end navigation -->
+
+    <!-- image slider -->
+
+    <div class="container">
+      <div class="pic">
+        <img
+          src="https://i.postimg.cc/C15JjLbZ/pexels-annushka-ahuja-7991641.jpg"
+          alt=""
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://i.postimg.cc/RhXHGc94/pexels-scott-webb-136410.jpg"
+          alt=""
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://i.postimg.cc/cJSLgvym/pexels-rodnae-productions-7045486.jpg"
+          alt=""
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://i.postimg.cc/cCYQQLNq/pexels-nathan-cowley-1300526.jpg"
+          alt=""
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://i.postimg.cc/hPBmkgBj/pexels-pixabay-416778.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="button">
+        <a onclick="nextpic(-1)" class="prev"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></a>
+        <a onclick="nextpic(1)" class="next"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+
+      <div class="dots">
+        <span class="dot" onclick="currentPic(1)"></span>
+        <span class="dot" onclick="currentPic(2)"></span>
+        <span class="dot" onclick="currentPic(3)"></span>
+        <span class="dot" onclick="currentPic(4)"></span>
+        <span class="dot" onclick="currentPic(5)"></span>
+      </div>
     </div>
+
+    <!-- end image slider -->
+
+    <!-- schedule -->
+    <section class="schedule" id="schedule">
+      <h1 class="heading">schedule</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>start date</th>
+            <th>hour</th>
+            <th>class</th>
+            <th>training mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="start date" class="starting"><p></p></td>
+            <td data-label="hour" class="hour"><p></p></td>
+            <td data-label="class" class="type"><p></p></td>
+            <td data-label="training mode" class="mode"><p></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- end schedule -->
+
+    <!-- pricing -->
+
+    <section class="pricing" id="pricing">
+      <h1 class="heading copy-me">pricing plan</h1>
+      <div class="box-container">
+        <div class="box">
+          <h3>basic plan</h3>
+          <div class="price"><span>$ </span>10 <span>/mo</span></div>
+          <h3 class="month">1 months</h3>
+          <div class="list">
+            <p><i class="fas fa-check"></i> box</p>
+            <p><i class="fas fa-check"></i> aerobics</p>
+            <p><i class="fas fa-check"></i> weight lifting</p>
+            <p><i class="fas fa-times"></i> yoga</p>
+            <p><i class="fas fa-times"></i> membership</p>
+          </div>
+          <button class="btn-pricing">choose the plan</button>
+        </div>
+
+        <div class="box">
+          <h3>standard plan</h3>
+          <div class="price"><span>$ </span>30 <span>/mo</span></div>
+          <h3 class="month">3 months</h3>
+          <div class="list">
+            <p><i class="fas fa-check"></i> box</p>
+            <p><i class="fas fa-check"></i> aerobics</p>
+            <p><i class="fas fa-check"></i> weight lifting</p>
+            <p><i class="fas fa-times"></i> yoga</p>
+            <p><i class="fas fa-times"></i> membership</p>
+          </div>
+          <button class="btn-pricing">choose the plan</button>
+        </div>
+
+        <div class="box">
+          <h3>silver plan</h3>
+          <div class="price"><span>$ </span>60 <span>/mo</span></div>
+          <h3 class="month">6 months</h3>
+          <div class="list">
+            <p><i class="fas fa-check"></i> box</p>
+            <p><i class="fas fa-check"></i> aerobics</p>
+            <p><i class="fas fa-check"></i> weight lifting</p>
+            <p><i class="fas fa-times"></i> yoga</p>
+            <p><i class="fas fa-times"></i> membership</p>
+          </div>
+          <button class="btn-pricing">choose the plan</button>
+        </div>
+
+        <div class="box">
+          <h3>premium plan</h3>
+          <div class="price"><span>$ </span>90 <span>/mo</span></div>
+          <h3 class="month">12 months</h3>
+          <div class="list">
+            <p><i class="fas fa-check"></i> box</p>
+            <p><i class="fas fa-check"></i> aerobics</p>
+            <p><i class="fas fa-check"></i> weight lifting</p>
+            <p><i class="fas fa-times"></i> yoga</p>
+            <p><i class="fas fa-times"></i> membership</p>
+          </div>
+          <button class="btn-pricing">choose the plan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright modal -->
+    <dialog class="modal">
+      <h2>this is a POP UP</h2>
+      <h1 style="color: #ff0000">OI! my content is copyright</h1>
+      <button class="close-button"><strong>&#10005;</strong></button>
+    </dialog>
+    <!--end copyright modal -->
+
+    <!-- trainers -->
+    <section id="trainers" class="trainers view">
+      <div class="main">
+        <h1 class="heading copy-me">trainers</h1>
+      </div>
+
+      <div class="content">
+        <div class="frame">
+          <div class="box">
+            <h2 class="name">Henry</h2>
+            <p>
+              <button data-target="#henry" class="active">
+                weightlifting trainer
+              </button>
+            </p>
+            <img
+              src="https://i.postimg.cc/cLmL3sxG/pexels-binyamin-mellish-17840.jpg"
+              alt=""
+            />
+          </div>
+          <div class="headline">
+            <div class="icons">
+              <span>like <i class="fas fa-heart"></i></span>
+              <span>message <i class="fas fa-comment"></i></span>
+              <span>follow <i class="fas fa-user-plus"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="box">
+            <h2 class="name">Mark</h2>
+            <p><button data-target="#mark">bodybuilding trainer</button></p>
+            <img
+              src="https://i.postimg.cc/L5Mcv1DC/pexels-krzysztof-biernat-15046714.jpg"
+              alt=""
+            />
+          </div>
+          <div class="headline">
+            <div class="icons">
+              <span>like <i class="fas fa-heart"></i></span>
+              <span>message <i class="fas fa-comment"></i></span>
+              <span>follow <i class="fas fa-user-plus"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="box">
+            <h2 class="name">Jun Li</h2>
+            <p><button data-target="#jun">tae bo trainer</button></p>
+            <img
+              src="https://i.postimg.cc/Vk5Vqg1s/pexels-andrea-piacquadio-869243.jpg"
+              alt=""
+            />
+          </div>
+          <div class="headline">
+            <div class="icons">
+              <span>like <i class="fas fa-heart"></i></span>
+              <span>message <i class="fas fa-comment"></i></span>
+              <span>follow <i class="fas fa-user-plus"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="tabs">
+        <article id="henry" class="active">
+          <div class="content">
+            <div class="frame">
+              <div class="box">
+                <img
+                  src="https://i.postimg.cc/wvskqMz1/pexels-binyamin-mellish-116077.jpg"
+                  alt=""
+                />
+                <div class="intro">
+                  <h3>weightlifter</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Reiciendis, quae.
+                  </p>
+                </div>
+              </div>
+              <div class="title">
+                Henry - you trainer for weightlifting and strongman
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                laborum!
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="mark">
+          <div class="content">
+            <div class="frame">
+              <div class="box">
+                <img
+                  src="https://i.postimg.cc/hG947Jmk/pexels-krzysztof-biernat-15046713.jpg"
+                  alt=""
+                />
+                <div class="intro">
+                  <h3>bodybuilder</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni, quisquam.
+                  </p>
+                </div>
+              </div>
+              <div class="title">
+                Mark - you trainer for body sculpting and contests
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                unde?
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="jun">
+          <div class="content">
+            <div class="frame">
+              <div class="box">
+                <img
+                  src="https://i.postimg.cc/90THsKBv/pexels-andrea-piacquadio-3775588.jpg"
+                  alt=""
+                />
+                <div class="intro">
+                  <h3>martial artist</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum, et.
+                  </p>
+                </div>
+              </div>
+              <div class="title">
+                Jun Li - you trainer for dancing with dumbbells
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore, fugiat?
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </section>
+    <!-- end trainers -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h1 class="heading copy-me">Contact us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img
+            src="https://i.postimg.cc/HLYWLZHr/boxing.gif"
+            alt=""
+            width="200"
+            height="200"
+          />
+          <img
+            src="https://i.postimg.cc/dVsg3C5v/f6a0b5-3d59d9e663ee45f2b53bbded6b010602-mv2.gif"
+            alt=""
+            width="200"
+            height="200"
+          />
+          <img
+            src="https://i.postimg.cc/9MTHjhQn/a8a9ba4d3ec0b6e7cdd30918fbbcdd92.gif"
+            alt=""
+            width="200"
+            height="200"
+          />
+          <img
+            src="https://i.postimg.cc/Hn97rSjj/giphy.webp"
+            alt=""
+            width="200"
+            height="200"
+          />
+        </div>
+        <form name="contact" id="contact-form">
+          <span>your name</span>
+          <input
+            type="text"
+            required
+            placeholder="enter your full name"
+            maxlength="50"
+            name="name"
+            class="box"
+          />
+          <span>your email</span>
+          <input
+            type="email"
+            required
+            placeholder="enter your valid email"
+            maxlength="50"
+            name="email"
+            class="box"
+          />
+          <span>select class</span>
+          <select name="class" class="box" required>
+            <option value="" disabled selected>select the class --</option>
+            <option value="yoga">yoga</option>
+            <option value="kangoo jumps">kangoo jumps</option>
+            <option value="bodybuilding">bodybuilding</option>
+            <option value="tae bo">tae bo</option>
+          </select>
+          <span>message</span>
+          <div class="message">
+            <textarea
+              required
+              name="message"
+              id="message"
+              rows="4"
+              cols="50"
+              placeholder="write something..."
+              style="resize: none"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-pricing">submit</button>
+          <!-- error and succes message -->
+          <div class="alert-message">
+            <errors class="errors"></errors>
+            <success class="success"></success>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- end contact -->
+
+    <!-- bmi calculator -->
+
+    <h1 class="heading copy-me">Calculate your BMI</h1>
+
+    <section id="bmi" class="bmi-container">
+      <div class="box-bmi">
+        <h2>Place down your current weight & height:</h2>
+        <div class="content">
+          <div class="input">
+            <label for="weight">Weight (kg)</label>
+            <input id="weight" type="number" />
+          </div>
+          <div class="input">
+            <label for="weight">Height (cm)</label>
+            <input id="height" type="number" />
+          </div>
+          <button id="calculate" class="calculate">Calculate BMI</button>
+          <button onclick="reload()" id="clear" class="clear">Clear</button>
+        </div>
+        <div class="result">
+          <h4 id="heading"></h4>
+          <p id="bmi-output"></p>
+          <p class="comment"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end bmi calculator -->
+
+    <!-- review section  -->
+    <h1 class="heading copy-me">Reviews</h1>
+    <section class="review" id="testimonials">
+      <div class="information">
+        <span>Testimonials</span>
+        <h3>what out clients says</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+          blanditiis nostrum unde nemo inventore suscipit!
+        </p>
+        <a href="#" class="btn-pricing">read more</a>
+      </div>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              voluptate.
+            </p>
+            <div class="user">
+              <img
+                src="https://i.postimg.cc/CxkTt5Z6/pexels-andrea-piacquadio-3768918.jpg"
+                alt=""
+              />
+              <div class="info">
+                <h3>Andreea</h3>
+                <span>trainer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              voluptate.
+            </p>
+            <div class="user">
+              <img
+                src="https://i.postimg.cc/sfhk11mf/pexels-nappy-936075.jpg"
+                alt=""
+              />
+              <div class="info">
+                <h3>Mary</h3>
+                <span>runner</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              voluptate.
+            </p>
+            <div class="user">
+              <img
+                src="https://i.postimg.cc/6qqzsXRT/pexels-andrea-piacquadio-927437.jpg"
+                alt=""
+              />
+              <div class="info">
+                <h3>Scott</h3>
+                <span>boxer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              voluptate.
+            </p>
+            <div class="user">
+              <img
+                src="https://i.postimg.cc/nzJcwFyY/pexels-franck-denis-1211480.jpg"
+                alt=""
+              />
+              <div class="info">
+                <h3>Lee</h3>
+                <span>athlete</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end review section  -->
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="box">
+          <h3><i class="fas fa-dumbbell"></i> fitness</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, earum.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"> +598-238-5822</i></a>
+          <a href="#"><i class="fas fa-phone"> +598-238-5822</i></a>
+          <a href="#"><i class="fas fa-envelope"> sportaddicts@gmail.com</i></a>
+          <a href="#"><i class="fas fa-map"> bucharest, romania</i></a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i> home</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> about</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> pricing</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> classes</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> schedule</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> gallery</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i> my account</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> new offers</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> trainers</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> equipment</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> supplements</a>
+        </div>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+
+      <div class="credit">
+        &copy; <span id="current-year"> 2022</span> all rights reserved by
+        <span>sports addicts</span>
+      </div>
+    </section>
+    <!-- end footer -->
+
+    <!-- swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      //swiper reviews
+
+      var swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+    <script>
+      const { createClient } = supabase;
+
+      supabase = createClient(
+        "https://xuhajnfrdoawhepkiawx.supabase.co",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh1aGFqbmZyZG9hd2hlcGtpYXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5NTM3MTIsImV4cCI6MTk5NDUyOTcxMn0.SQdJ8Y1jr04Mkz7dh2BNV7SFr9Xd7Hh61iQoU-7nOZM"
+      );
+
+      const form = document.querySelector("#contact-form");
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formInputs = form.querySelectorAll("input, select, textarea");
+
+        let submision = {};
+
+        formInputs.forEach((element) => {
+          const { value, name } = element;
+          if (value) {
+            submision[name] = value;
+          }
+        });
+
+        // console.log(submision);
+
+        const { error, data } = await supabase
+          .from("entries")
+          .insert([submision]);
+
+        // if (error) {
+        //   alert(`There was an error, please try again`);
+        // } else {
+        //   alert(`Thanks for contacting us`);
+        // }
+
+        const success = document.querySelector("success");
+        const errors = document.querySelector("errors");
+
+        if (error) {
+          errors.innerText = `There was an error, please try again`;
+          errors.style.fontSize = "2rem";
+          errors.style.color = "#ff0000";
+        } else {
+          success.innerText = `Thanks for contacting us`;
+          success.style.fontSize = "2rem";
+          success.style.color = "#3db30ecc";
+        }
+
+        //this will reset everty input
+        formInputs.forEach((element) => (element.value = ""));
+
+        // console.log({error, data});
+      });
+    </script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
