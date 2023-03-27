@@ -24,3 +24,4 @@ const handleSubmit = (event) => {
 document
   .querySelector("form")
   .addEventListener("submit", handleSubmit);
+  form.reset();
