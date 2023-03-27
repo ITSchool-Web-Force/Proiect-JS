@@ -190,16 +190,6 @@ a {
   padding: 8px;
 }
 
-.schedule .table tbody tr td .btn {
-  background-color: #ff1046;
-  font-weight: medium;
-  line-height: 20px;
-  padding: 1px;
-  color: var(--white);
-  text-align: center;
-  border-radius: 6px;
-}
-
 /* end schedule */
 
 /* pricing */
