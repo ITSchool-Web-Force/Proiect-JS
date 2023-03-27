@@ -58,16 +58,18 @@
       </div>
       <div class="contact-form">
         <form name="contact" method="POST" data-netlify="true">
-          <div>
-          <input type="text" class="form-control" placeholder="Nume">
-          <input type="text" class="form-control" placeholder="Prenume">
-          </div>
-          <div>
-          <input type="email" class="form-control" placeholder="E-mail">
-          <input type="text" class="form-control" placeholder="Telefon">
-          </div>
-          <textarea rows="5" placeholder="Lasă-ne un mesaj" class="form-control"></textarea>
-          <input type="submit" class="send-btn" value="Trimite">
+          <input type="hidden" name="subject" 
+          value="Sales inquiry from mysitename.netlify.app" />
+            <div>
+            <input type="text" class="form-control" placeholder="Nume">
+            <input type="text" class="form-control" placeholder="Prenume">
+            </div>
+            <div>
+            <input type="email" class="form-control" placeholder="E-mail">
+            <input type="text" class="form-control" placeholder="Telefon">
+            </div>
+            <textarea rows="5" placeholder="Lasă-ne un mesaj" class="form-control"></textarea>
+            <button type="submit" class="send-btn" value="Trimite">
         </form>
         <div>
           <img src="../photo/photo13.jpg" alt="stupina bio">
