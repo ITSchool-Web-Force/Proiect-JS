@@ -298,9 +298,6 @@ footer {
         font-size: 1.6rem;
         padding-block: 1.3rem;
     }
-    .tabs {
-        flex-direction: row;
-    }
 }
 @media (min-width: 500px) {
     header {
@@ -364,6 +361,11 @@ footer {
         justify-content: space-between;
         align-content: center;
         gap: 1rem;
+    }
+}
+@media (min-width: 580px) {
+    .tabs {
+        flex-direction: row;
     }
 }
 @media (min-width: 920px) {
