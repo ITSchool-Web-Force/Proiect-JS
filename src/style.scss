@@ -96,7 +96,30 @@ main {
     padding-block-end: 3rem;
 }
 .container {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(238, 243, 243);
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+h3 {
+    cursor: pointer;
+}
+.tab {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 1rem;      
+    line-height: normal;
 }
 .turned-leaf {
     transform: rotateY(180deg);
@@ -272,6 +295,9 @@ footer {
         font-size: 1.6rem;
         padding-block: 1.3rem;
     }
+    .tabs {
+        flex-direction: row;
+    }
 }
 @media (min-width: 500px) {
     header {
@@ -356,31 +382,6 @@ footer {
     section p {
         font-size: 2rem;
         padding-block: 1.6rem;
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-    .tabs {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    h3 {
-        cursor: pointer;
-    }
-    .tab {
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1rem;
-        padding: 0.6rem;
-        background-color: white; 
-        border-radius: 1rem;       
     }
 }
 @media (min-width: 1000px) {
