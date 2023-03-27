@@ -9,13 +9,19 @@ btn.addEventListener("click", () => box.classList.remove("locatie"));
 video.addEventListener("click", (event) => {
     video.play();
   });
+  
 
+
+  
 
  // adaugare locatie 
 
-  document.getElementById("try").addEventListener("click", function(){
+  document.getElementById("afisareadresa").addEventListener("click", function(){
     document.getElementById("text").innerText = "Sabareni Strada 133 nr.1 BIS";
 });
+
+
+
 
 
 
@@ -43,6 +49,31 @@ function handleButtonClick(event) {
 }
 
 
+// marire buttom
 
 
+document.getElementById("afisareadresa").addEventListener("mouseover", mouseOver);
+document.getElementById("afisareadresa").addEventListener("mouseout", mouseOut);
 
+function mouseOver() {
+  document.getElementById("afisareadresa").style.fontSize = '16px';
+  document.getElementById("afisareadresa").style.color = 'white';
+  document.getElementById("afisareadresa").style.backgroundColor = 'red';
+
+}
+
+function mouseOut() {
+  document.getElementById("afisareadresa").style.fontSize = '12px';
+  document.getElementById("afisareadresa").style.color = 'white';
+  document.getElementById("afisareadresa").style.backgroundColor = 'orange';
+ 
+}
+
+
+//Afisare banner consola
+
+const mybanner = document.getElementById("mybanner");
+
+mybanner.addEventListener("load", function () {
+  console.log("Bannerul este afisat");
+});
