@@ -17,11 +17,11 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => navigate("/MUltumim/"))
+    .then(() =>console.log("Form successfully submitted"))
     .catch((error) => alert(error));
 };
 
 document
-  .querySelector("form")
+  .querySelector("contact-form")
   .addEventListener("submit", handleSubmit);
  
