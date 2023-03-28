@@ -11,3 +11,15 @@ function stickyNavbar() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+
+
+const button = document.getElementById('myButton');
+
+button.addEventListener('click', function() {
+  button.classList.toggle('clicked');
+  setTimeout(function() {
+    window.location.href = 'pagina2.html';
+  }, 500);
+});
