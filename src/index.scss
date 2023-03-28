@@ -137,6 +137,15 @@ footer p {
   height: 3rem;
   width: 4rem;
 }
+.infotext {
+  margin:auto;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+.infotext p {
+  text-align: center;
+}
 @media (min-width: 45rem) {
   #cursor {
     height: 5rem;

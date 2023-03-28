@@ -57,18 +57,17 @@
         </div>
       </div>
       <div class="contact-form">
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="subject" 
-          value="Sales inquiry from mysitename.netlify.app" />
+        <form name="contact" method="POST" data-netlify="true" action="/success/">
+          <input type="hidden" name="subject" value="Contact form de la Fagurel" />
             <div>
-            <input type="text" class="form-control" placeholder="Nume" name="name">
+            <input type="text" class="form-control" placeholder="Nume" name="nume">
             <input type="text" class="form-control" placeholder="Prenume" name="prenume">
             </div>
             <div>
             <input type="email" class="form-control" placeholder="E-mail" name="email">
             <input type="text" class="form-control" placeholder="Telefon" name="phone">
             </div>
-            <textarea rows="5" placeholder="Lasă-ne un mesaj" class="form-control" name="message"></textarea>
+            <textarea rows="5" placeholder="Lasă-ne un mesaj" class="form-control" name="mesaj"></textarea>
             <input type="submit" class="send-btn" value="Trimite">
         </form>
         <div>
