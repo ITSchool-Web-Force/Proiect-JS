@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
+    <script type="module" src="./contact.js"></script>
     <title>Proiect JavaScript</title>
   </head>
   <body>
@@ -14,7 +15,13 @@
       </div>
       <div class="main-group">
         <a class="user">
-          <img src="./icons/user.svg" alt="user-icon" width="24" height="24" />
+          <img
+            src="./icons/user.svg"
+            class="user-icon"
+            alt="user-icon"
+            width="24"
+            height="24"
+          />
         </a>
         <a href="index.html">
           <img
@@ -40,8 +47,70 @@
         <a class="nav-item" href="ourstory.html">our story</a>
         <a class="nav-item active" href="contact.html">contact</a>
       </nav>
+      <div class="ribbon">
+        <div class="log-in-group">
+          <form class="account">
+            <label class="log">
+              <p>Email</p>
+              <input
+                class="input-email"
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </label>
+            <label class="password">
+              <p>Password</p>
+              <input
+                class="input-password"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+            <button class="login-btn" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div>
+        <img
+          class="location-image"
+          src="./images/location-model-1.jpg"
+          alt="artifex store location"
+          width="1920"
+          height="750"
+        />
+        <h3>Find us near you</h3>
+        <div class="showroom-locations">
+          <div class="location-group">
+            <p class="location-title">Showroom Milan</p>
+            <p>Via Montenapoleone 12, Milan</p>
+            <p class="location-email">info@maisonartifex.com</p>
+            <p>+39 02 657 5418</p>
+            <button class="visit-us">Visit US</button>
+          </div>
+          <div class="location-group">
+            <p class="location-title">Showroom Paris</p>
+            <p>Avenue George V 42, Paris</p>
+            <p class="location-email">info@maisonartifex.com</p>
+            <p>+33 (0)1 47 20 59 60</p>
+            <button class="visit-us">Visit US</button>
+          </div>
+          <div class="location-group">
+            <p class="location-title">Showroom New York</p>
+            <p>706 Madison Avenue, New York</p>
+            <p class="location-email">info@maisonartifex.com</p>
+            <p>+1 212 751 3181</p>
+            <button class="visit-us">Visit US</button>
+          </div>
+        </div>
+        <form></form>
+      </div>
+    </main>
     <aside>
       <p class="featured-title">Featured in</p>
       <div class="feature-group">
@@ -83,6 +152,11 @@
       </div>
     </aside>
     <footer>
+      <div class="footer-group">
+        <div class="world"></div>
+        <div class="blogs"></div>
+        <div class="costumer-care"></div>
+      </div>
       <div class="social-media">
         <a class="icon">
           <img src="./icons/icons8-instagram.svg" />

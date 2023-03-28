@@ -1,16 +1,3 @@
-// const angraOriginal = document.querySelector(".angra-img");
-// const angraDetail = document.querySelector(".angra-det-img");
-
-// angraOriginal.addEventListener("mouseover", function () {
-//   angraOriginal.style.display = "none";
-//   angraDetail.style.display = "block";
-// });
-
-// angraDetail.addEventListener("mouseout", function () {
-//   angraOriginal.style.display = "block";
-//   angraDetail.style.display = "none";
-// });
-
 const prodArea = document.querySelectorAll(".prod-area");
 
 prodArea.forEach(function (area) {
@@ -27,3 +14,5 @@ prodArea.forEach(function (area) {
     detailImg.style.display = "none";
   });
 });
+
+//Viewed recently

@@ -128,7 +128,8 @@ main {
 }
 .sideboard-group,
 .table-group,
-.armchair-group {
+.armchair-group,
+.viewed-section {
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -137,8 +138,25 @@ main {
   padding: 0 2rem 5rem 2rem;
   border-block-end: 0.25rem solid var(--gold);
 }
+
 .armchair-group {
   border-block-end: 0;
+}
+
+.viewed-section {
+  display: block;
+  border-block-start: 0.25rem solid var(--gold);
+  border-block-end: none;
+}
+
+.recently-text {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  color: var(--gold);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .prod-area {
@@ -279,6 +297,12 @@ footer {
     font-size: 0.3rem;
     padding: 0.05rem 0.25rem;
   }
+  .sideboard-group,
+  .table-group,
+  .armchair-group {
+    padding: 0 2rem 2rem 2rem;
+  }
+
   .feature-group {
     gap: 1rem;
     padding-block: 1.5rem;

@@ -133,12 +133,9 @@ h3 {
   text-align: center;
   margin-block-end: 0.25rem;
 }
-.img-cat {
+.location-image {
   max-width: 100vw;
   height: auto;
-}
-.img-cat:hover {
-  filter: brightness(70%) contrast(90%);
 }
 .featured-title {
   color: #fff;
@@ -255,4 +252,120 @@ footer {
   .navigation .nav-item {
     font-size: 1rem;
   }
+}
+
+.ribbon {
+  height: 0;
+  width: 100vw;
+  background-color: #d5d5d5;
+  transition: 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ribbon.active {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+.log,
+.password {
+  display: flex;
+  gap: 1rem;
+}
+
+.log-in-group {
+  display: none;
+}
+.log-in-group.active {
+  display: flex;
+}
+
+.input-email,
+.input-password {
+  display: flex;
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+
+  border-radius: 0;
+  border: 0.1rem solid var(--gold);
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+}
+.account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+}
+.account p {
+  display: flex;
+  align-items: center;
+  color: var(--gold);
+  font-family: "Inter", sans-serif;
+}
+
+.login-btn {
+  display: flex;
+  background-color: var(--gold);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #000;
+}
+
+.visit-us {
+  color: #fff;
+  background-color: var(--gold);
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-block-start: 1rem;
+}
+
+.showroom-locations p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.showroom-locations .location-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-block-end: 0.75rem;
+}
+
+.location-email {
+  color: var(--gold);
+}
+
+.visit-us:hover,
+.visit-us:focus {
+  background-color: #000;
+}
+
+.showroom-locations {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12.5rem 5rem 12.5rem;
+  margin-block: 3rem;
+  border-block-end: 0.25rem solid var(--gold);
+}
+.location-group {
+  max-width: 30rem;
+  display: flex;
+  gap: 0.35rem;
+  flex-direction: column;
+  align-items: center;
 }
