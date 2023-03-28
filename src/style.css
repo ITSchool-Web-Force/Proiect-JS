@@ -1,0 +1,317 @@
+@font-face {
+  font-family: myFont;
+  src: url(Crucial-Medium.otf);
+}
+@font-face {
+  font-family: secondFont;
+  src: url(BAD\ GRUNGE.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: myFont;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  cursor: none;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  z-index: 10;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  width: 100rem;
+  margin: auto;
+}
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.7rem;
+}
+.nav-branding {
+  font-size: 1.2rem;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 1.6rem;
+  height: 0.2rem;
+  margin: 0.3rem;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+.fitness {
+  margin-block-start: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.fitness-img {
+  width: 20rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-inline: auto;
+}
+.goals {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-block-start: 10rem;
+  margin-inline: auto;
+  color: white;
+  font-family: secondFont;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 200;
+}
+.stronger {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-inline: auto;
+  width: 18rem;
+  margin-block: 1rem;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+.wave .shape-fill {
+  fill: #000000;
+}
+main {
+  background-color: #000000;
+}
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background: #747373;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 1.2rem #acacac,
+              0 0 3.6rem #acacac,
+              0 0 6rem #acacac;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.cursor::before {
+  content: '';
+  position: absolute;
+  background: #acacac;
+  width: 3.1rem;
+  height: 3.1rem;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 9rem;
+  margin-inline-start: 3%;
+}
+.protein-powder {
+  margin-block-start: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.protein {
+  font-family: secondFont;
+}
+.gym-info {
+  width: 10rem;
+  text-align: center;
+  background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+  padding: 1rem;
+  border-radius: 30%;
+  margin-block: 1rem;
+  font-family: secondFont;
+
+}
+.gym-png {
+  width: 13rem;
+  margin-block: 1rem;
+  background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.gym-container {
+  background-color: #cecaca;
+  margin: -1rem;
+}
+.gym-subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.one-png {
+  width: 13rem;
+  margin-block: 1rem;
+  background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.hard-png {
+  width: 13rem;
+  margin-block: 1rem;
+  background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.trainers {
+  width: 10rem;
+  text-align: center;
+  background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+  padding: 1rem;
+  border-radius: 30%;
+  margin-block: 1rem;
+  font-family: secondFont;
+}
+.health-clubs {
+  width: 10rem;
+  text-align: center;
+  background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+  padding: 1rem;
+  border-radius: 30%;
+  margin-block: 1rem;
+  font-family: secondFont;
+}
+
+@media(max-width:100rem) {
+  .container {
+    width: 100%;
+  }
+}
+@media(max-width:64rem) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position:fixed;
+    left: -100%;
+    top:3.5rem;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+@media (min-width: 50rem) {
+  .swiper-slide img {
+    margin-inline-start: 9.5%;
+  }
+}
+@media (min-width: 59rem) {
+  .fitness-img {
+    width: 30rem;
+  }
+  .goals {
+    font-size: 3rem;
+  }
+  .stronger {
+    font-size: 1.5rem;
+  }
+  .protein {
+    font-size: 3rem;
+  }
+  .gym-subcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 72rem) {
+  .gym-png {
+    width: 25rem;
+  }
+  .one-png {
+    width: 25rem;
+  }
+  .hard-png {
+    width: 25rem;
+  }
+  .gym-info {
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .trainers {
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .health-clubs {
+    width: 15rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 84rem) {
+  .swiper-slide img {
+    width: 19rem;
+    margin-inline-start: 3%;
+  }
+  .protein {
+    font-size: 5rem;
+  }
+}
