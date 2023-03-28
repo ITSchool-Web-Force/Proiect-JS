@@ -11,7 +11,6 @@ shoppingCart.forEach((event) => {
 addEventListener("hashchange", (event) => {
   console.log('Hash changed!');
 });
-  
 
 //evenimente transitionstart, transitionend
 const message = document.querySelector(".message");
@@ -22,7 +21,7 @@ function bannerTransitions () {
   });
   banner.addEventListener("transitionend", () => {
     message.textContent = "";
-});
+  });
 };
 bannerTransitions();
 
