@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact </title>
+  <link rel="icon" href="../photo/photo4.png" type="image/png">
+  <link rel="stylesheet" href="./style-sheet.css">
+  <script type="module" src="./contact.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="logo"> Făgurel</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-item">acasa</a></li>
+        <li><a href="magazin.html" class="menu-item">magazin</a></li>
+        <li><a href="contact.html" class="menu-item">contact</a></li>
+      </ul>
+  </header>
+  <section class="contact-section">
+    <div class="contact-bg">
+      <h2>Stupina Bălteni </h2>
+      <p class="text">Ne puteți contacta pentru comenzi sau dacă aveți întrebări despre produsele noastre apicole. Răspundem cu drag prin E-mail sau la Telefon</p>
+    </div>
+    <div class="wrapper">
+      <div id="oferta" class="hide">
+        Luna aceasta transportul este gratuit pentru cumparaturi de minim 100 RON
+      </div>
+      <div id="button">
+        Descopera oferta lunii!
+      </div>
+    </div>
+    <div class="contact-body">
+      <div class="contact-info">
+        <div>
+          <span><i class="fas fa-mobile-alt"></i></span>
+          <span>Telefon</span>
+          <span class="text">0721 003 004</span>
+        </div>
+        <div>
+          <span><i class="fas fa-envelope-open"></i></span>
+          <span>E-mail</span>
+          <span class="text">stupina@fagurel.ro</span>
+        </div>
+        <div>
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <span>Adresă </span>
+          <span class="text">Strada Pădurii, nr 8, Bălteni, Ilfov</span>
+        </div>
+        <div>
+          <span><i class="fas fa-clock"></i></span>
+          <span>Program </span>
+          <span class="text">Luni- Sâmbătă (9:00  - 18:00)</span>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form name="contact" method="POST" data-netlify="true" action="/thankyou.html/">
+          <input type="hidden" name="subject" value="Contact form de la Fagurel"/>
+            <div>
+            <input type="text" class="form-control" placeholder="Nume" name="nume">
+            <input type="text" class="form-control" placeholder="Prenume" name="prenume">
+            </div>
+            <div>
+            <input type="email" class="form-control" placeholder="E-mail" name="email">
+            <input type="text" class="form-control" placeholder="Telefon" name="phone">
+            </div>
+            <textarea rows="5" placeholder="Lasă-ne un mesaj" class="form-control" name="mesaj"></textarea>
+            <input type="submit" class="send-btn" value="Trimite">
+        </form>
+        <div>
+          <img src="../photo/photo13.jpg" alt="stupina bio">
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=balteni, ilfov&t=&z=10&ie=UTF8&iwloc=&output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="contact-footer">
+      <h3>Urmărește-ne</h3>
+      <div class="social-links">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+</body>
+</html>
+       
