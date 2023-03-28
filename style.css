@@ -187,6 +187,7 @@ main {
 .continue {
   width: 30%;
   margin-block-start: 1.5rem;
+  
 }
 
 .servicii {
@@ -380,10 +381,61 @@ iframe {
 
  .img-modal{
   padding-block-start: 0.5rem;
-  max-width: 90%;
+  width: 100%;
   
 }
 
+@media  (min-width: 767px){
+  .hamburger {
+    display: none;
+    transition: none;
+  
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around
+ 
+  }
+  .menu {
+    display:flex;
+    
+  }
+
+  .menu-items {
+    transform: translate(0);
+    position:static;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: white;
+    transition: none;
+    transform: none;
+    
+    
+    
+  }
+
+  .menu-items a {
+    color: var(--main-color);
+  }
+
+  iframe {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .grid-res {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+.modal {
+  left: 0;
+  width: 30rem;
+}
+  
+}
 
 
 
