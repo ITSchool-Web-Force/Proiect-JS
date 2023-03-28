@@ -20,6 +20,7 @@
   gap: 1rem;
   color: white;
   height: 2vh;
+  z-index: 1;
 }
 
 .navbar {
@@ -29,14 +30,10 @@
   width: 100%;
   height: 10vh;
   border-bottom: 0.1rem solid;
+  z-index: 1;
 }
 
-.menu-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
+
 
 .menu {
   display: flex;
@@ -75,6 +72,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   position: absolute;
   top: 100%;
   left: 11%;
@@ -85,9 +83,9 @@
   margin: 0;
   padding: 1.2rem;
   transform: translateY(-300%);
-  transition: 300ms ease-in-out;
-  z-index: 5;
+  z-index: 2;
   opacity: 80%;
+  
 }
 
 .menu-items.show {
@@ -408,8 +406,7 @@ iframe {
     flex-direction: row;
     width: auto;
     background-color: white;
-    transition: none;
-    transform: none;
+   gap: 2.5rem;
     
     
     
