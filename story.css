@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+body {
+    background-image: url(./media/story/d4background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav {
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(52, 52, 53, 0.9);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border: 0.1rem solid rgb(36 37 38 / 90%);
+    border-radius: 0.8rem;
+    
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+.title {
+    padding-top: 5rem;
+    text-align: center;
+}
+.subtitle {
+    padding-top: 4rem;
+    text-align: center;
+}
+.story {
+    display: grid;
+    padding-top: 5rem;
+    gap: 2rem;
+    text-align: center;
+    place-items: center;
+    grid-template-areas: 
+        "creation"
+        "legends"
+        "enmity"
+        "reign"
+        "personality" 
+        "cult"
+        "hatred"
+        "daughter" 
+        "evil" 
+        "unstopable";
+}
+.creation {
+    grid-area: creation;
+}
+.enmity {
+    grid-area: enmity;
+}
+.personality {
+    grid-area: personality;
+}
+.hatred {
+    grid-area: hatred;
+}
+.evil {
+    grid-area: evil;
+}
+.legends {
+    grid-area: legends;
+}
+.reign {
+    grid-area: reign;
+}
+.cult {
+    grid-area: cult;
+}
+.daughter {
+    grid-area: daughter;
+}
+.unstopable {
+    grid-area: unstopable;
+    padding-bottom: 3rem;
+}
+@media screen and (min-width: 700px) {
+    .nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    * {
+        color: white;
+        text-shadow: 0.2rem 0.2rem 0.4rem black;
+        }
+    .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        font-size: 2.5vh;
+    }
+    .story {
+        display: grid;
+        font-size: 2.5vh;
+        grid-template-areas:
+            "creation legends"
+            "reign enmity"
+            "personality cult"
+            "daughter hatred"
+            "evil unstopable";    
+    }
+}

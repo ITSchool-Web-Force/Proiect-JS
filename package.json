@@ -2,9 +2,8 @@
   "source": "src/index.html",
   "browserslist": "> 5%",
   "targets": {
-    "default": {
-      "publicUrl": "/Proiect-JS"
-    }
+    "default": {}
+    
   },
   "scripts": {
     "start": "parcel",
