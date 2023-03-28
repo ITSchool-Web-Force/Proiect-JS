@@ -33,8 +33,6 @@
   z-index: 1;
 }
 
-
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -85,7 +83,6 @@
   transform: translateY(-300%);
   z-index: 2;
   opacity: 80%;
-  
 }
 
 .menu-items.show {
@@ -179,13 +176,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .continue {
   width: 30%;
   margin-block-start: 1.5rem;
-  
 }
 
 .servicii {
@@ -196,7 +191,6 @@ main {
   color: white;
   height: 25.8rem;
   width: 15.5rem;
-  
 }
 
 .titlu-servicii {
@@ -234,11 +228,9 @@ main {
   left: 0;
   padding-bottom: 1rem;
   text-align: center;
-  
-
 }
-.text-important::before{
-  content:"*"
+.text-important::before {
+  content: "*";
 }
 .slider-container {
   position: relative;
@@ -377,39 +369,32 @@ iframe {
   padding-block-start: 1rem;
 }
 
- .img-modal{
+.img-modal {
   padding-block-start: 0.5rem;
   width: 100%;
-  
 }
 
-@media  (min-width: 767px){
+@media (min-width: 767px) {
   .hamburger {
     display: none;
     transition: none;
-  
   }
   .navbar {
     display: flex;
-    justify-content: space-around
- 
+    justify-content: space-around;
   }
   .menu {
-    display:flex;
-    
+    display: flex;
   }
 
   .menu-items {
     transform: translate(0);
-    position:static;
+    position: static;
     display: flex;
     flex-direction: row;
     width: auto;
     background-color: white;
-   gap: 2.5rem;
-    
-    
-    
+    gap: 2.5rem;
   }
 
   .menu-items a {
@@ -427,12 +412,8 @@ iframe {
     gap: 1.5rem;
   }
 
-.modal {
-  left: 0;
-  width: 30rem;
+  .modal {
+    left: 0;
+    width: 30rem;
+  }
 }
-  
-}
-
-
-
