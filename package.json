@@ -3,7 +3,6 @@
   "browserslist": "> 5%",
   "targets": {
     "default": {
-      "publicUrl": "/Proiect-JS"
     }
   },
   "scripts": {

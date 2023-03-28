@@ -1,0 +1,548 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Crimson+Text:ital@1&family=Poppins:wght@400;500&display=swap');
+
+/*LOGO*/
+
+
+.cart {
+  display: none;
+}
+
+.img-depo {
+  width: 100%;
+}
+/*Navigarea in pagini*/
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 166, 0, 0.845);
+  border-radius: 25px;
+  margin-block-start: 1rem;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+.subnavbar {
+  float: left;
+  overflow: hidden;
+  text-align: right;
+}
+
+
+.subnavbar .subnavbarbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover, .subnavbar:hover .subnavbarbtn {
+  background-color: rgba(255, 166, 0, 0.845);
+}
+
+
+.subnavbar-content {
+   display: none;
+   position:absolute;
+  background-color:rgba(255, 166, 0, 0.845);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ 
+}
+
+
+.subnavbar-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnavbar-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnavbar:hover .subnavbar-content {
+  display: block;
+}
+
+
+.banner {
+  width: 100%;
+  margin-block-start: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+  margin-block-start: 3rem;
+  font-family: 'Bungee Spice', cursive;
+}
+
+
+
+.footer {
+  background-color: rgb(233, 233, 233);
+  margin-block-start: 4rem;
+  padding: 30px;
+}
+
+
+
+.contact {
+  color: black; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+.drepturi {
+  text-align: center;
+}
+
+.imgprod {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+
+video {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.galerie-video {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5rem;
+  margin-block-start: 5rem;
+
+}
+
+.img1 {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.adresa {
+  background-color: orange; 
+  width: 8rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 1rem;
+  border-radius: 25px;
+  border: 1px solid orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px 10px 5px;
+}
+
+
+
+
+/*  DESKTOP */
+
+@media (min-width:800px) {
+
+  .navbar {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.845);
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgb(255, 202, 159);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: rgba(255, 166, 0, 0.845);
+    color: white;
+  }
+
+
+
+   .banner, .footer {
+    width: 100%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+  main {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imgprod {
+  width: 300px;
+}
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+  .subnavbar-content {
+   
+    margin-inline-start: 12rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+
+  .galerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-start: 2rem;
+    gap: 4rem;
+  }
+
+  .img-depo {
+    width: 100%;
+    border-radius: 15px;
+   
+  }
+
+  video {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .galerie-video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-block-start: 5rem;
+  
+  }
+  
+  .img1 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .img2{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+
+}
+
+
+
+
+@media (min-width:1050px) {
+
+  .navbar {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.845);
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgb(255, 202, 159);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: rgba(255, 166, 0, 0.845);
+    color: white;
+  }
+
+
+
+   .banner, .footer {
+    width: 90%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+  main {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imgprod {
+  width: 350px;
+}
+
+.sectiune-produse {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+  margin-block-start: 4rem;
+}
+
+.cos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+  .subnavbar-content {
+   
+    margin-inline-start: 12rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+
+
+  .img-depo {
+    width: 35%;
+    border-radius: 15px;
+   
+  }
+  
+ h1 {
+  font-size: 23px;
+  font-family: 'Bungee Spice', cursive;
+ }
+
+video {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.galerie-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block-start: 5rem;
+
+}
+
+.galerie {
+  display: flex;
+  flex-direction: row;
+}
+
+.img1 {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline-end: 10rem;
+}
+
+.img2 {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline-start: 10rem;
+}
+
+
+.hidden {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+
+}
+
+
+

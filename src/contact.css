@@ -1,0 +1,533 @@
+.cart {
+  display: none;
+}
+
+.img-depo {
+  width: 100%;
+}
+/*Navigarea in pagini*/
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 166, 0, 0.845);
+  border-radius: 25px;
+  margin-block-start: 1rem;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.subnavbar {
+  float: left;
+  overflow: hidden;
+  text-align: right;
+}
+
+
+
+.subnavbar .subnavbarbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+.navbar a:hover, .subnavbar:hover .subnavbarbtn {
+  background-color: rgba(255, 166, 0, 0.845);
+}
+
+
+.subnavbar-content {
+   display: none;
+   position:absolute;
+  background-color:rgba(255, 166, 0, 0.845);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ 
+}
+
+
+.subnavbar-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnavbar-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnavbar:hover .subnavbar-content {
+  display: block;
+}
+
+
+
+.banner {
+  height: 200px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.info-contact {
+  border: 1px solid black;
+  width: 100%;
+  margin-block-start: 4rem;
+  background-color: white;
+  border-radius: 25px;
+}
+
+h4 {
+  background-color: black;
+  padding: 10px;
+  margin: 7px 7px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+.maps {
+  display: flex;
+}
+
+.phone {
+  display: flex;
+}
+
+.mail {
+  display: flex;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffcc84;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ff3d16;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff6d05;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffcc84;
+  padding: 20px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer {
+  background-color: rgb(233, 233, 233);
+  margin-block-start: 4rem;
+  padding: 30px;
+  text-align: center;
+}
+
+
+@media (min-width:800px) {
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(255, 166, 0, 0.845);
+    border-radius: 25px;
+    margin-block-start: 1rem;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .subnavbar {
+    float: left;
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgba(255, 166, 0, 0.845);
+  }
+  
+  
+  .subnavbar-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnavbar:hover .subnavbar-content {
+    display: block;
+  }
+  
+
+
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+
+  .banner {
+    height: 300px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-contact {
+    border: 3px solid black;
+    width: 59%;
+    margin-block-start: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  h4 {
+    background-color: black;
+    padding: 10px;
+    margin: 7px 7px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+
+  .maps {
+    display: flex;
+  }
+
+  .phone {
+    display: flex;
+  }
+
+  .mail {
+    display: flex;
+  }
+  
+  
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffcc84;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #ff3d16;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ff6d05;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffcc84;
+    width: 40rem;
+    margin-block-start: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ 
+}
+
+
+
+@media (min-width:1000px) {
+
+  .navbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow: hidden;
+    background-color: rgba(255, 166, 0, 0.845);
+    border-radius: 25px;
+    margin-block-start: 1rem;
+  }
+
+  
+  .banner, .footer {
+    width: 90%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  .subnavbar {
+    float: left;
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  
+  .subnavbar .subnavbarbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  
+  .navbar a:hover, .subnavbar:hover .subnavbarbtn {
+    background-color: rgba(255, 166, 0, 0.845);
+  }
+  
+  
+  .subnavbar-content {
+     display: none;
+     position:absolute;
+    background-color:rgba(255, 166, 0, 0.845);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+  }
+  
+  
+  .subnavbar-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnavbar-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnavbar:hover .subnavbar-content {
+    display: block;
+  }
+  
+
+   .footer {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start: 2rem;
+  }
+
+  i {
+    color: white;
+    float: right;
+    margin-inline-end: 1rem;
+  }
+
+
+  .banner {
+    height: 300px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-contact {
+    border: 3px solid black;
+    width: 50%;
+    height: 10%;
+    margin-block-start: 4rem;
+    margin-inline-start: 10rem;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  h4 {
+    background-color: black;
+    padding: 10px;
+    margin: 7px 7px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+
+  .maps {
+    display: flex;
+  }
+
+  .phone {
+    display: flex;
+  }
+
+  .mail {
+    display: flex;
+  }
+  
+  .subnavbar-content {
+   
+    margin-inline-start: 9.9rem;
+    background-color:rgba(255, 166, 0, 0.845);
+    width: 20%;
+    margin-inline-start: 12rem;
+  
+   
+   
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffcc84;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #ff3d16;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ff6d05;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffcc84;
+    width: 40rem;
+    margin-block-start: 4rem;
+    margin-inline-end: 10rem;
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
+  .banner, .footer {
+    width: 90%;
+    display: block;
+    margin-block-start: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+}
+
