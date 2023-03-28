@@ -1,4 +1,4 @@
-reservation-form {
+form.resv {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
@@ -7,18 +7,18 @@ reservation-form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.reservation-form input,
-.reservation-form textarea {
+form input,
+form textarea {
   display: block;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: none;
+  border: 2px solid #ccc;
   border-radius: 3px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.reservation-form input[type="submit"] {
+form input[type="submit"] {
   background-color: #3498db;
   color: #fff;
   border: none;
@@ -27,7 +27,7 @@ reservation-form {
   cursor: pointer;
 }
 
-.reservation-form input[type="submit"]:hover {
+form input[type="submit"]:hover {
   background-color: #2980b9;
 }
 
