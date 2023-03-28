@@ -1,0 +1,150 @@
+
+ .restaurant-logo img {
+    height: 40px;
+    margin: 10px;
+  }
+  
+  
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 999;
+  }
+  
+  .sticky-nav nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sticky-nav nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .sticky-nav nav ul li {
+    margin-right: 20px;
+  }
+  
+  .sticky-nav nav ul li a {
+    text-decoration: none;
+    color: rgb(9, 3, 3);
+    font-weight: bold;
+  }
+  
+  .restaurant-name h1 {
+    font-size: 24px;
+    font-family: bradley hand, cursive;
+    margin: 0;
+    padding: 20px;
+    color: rgb(8, 7, 7);
+    float: left;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a:hover {
+    color: #e67e22;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-color: #d9c19b;
+  }
+  
+  .hero-image img {
+    width: 70%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+    margin-left: 1px;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .hero p {
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #e67e22;
+  }
+  
+  #myButton {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+  }
+  
+  #myButton.clicked {
+    background-color: #333;
+    color: #fff;
+  }
