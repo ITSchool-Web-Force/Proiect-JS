@@ -113,16 +113,21 @@ showSlide();
 
 window.addEventListener("hashchange", function () {
   const targetId = location.hash;
-  document.querySelector(targetId).scrollIntoView({
-    behavior: "smooth",
-  });
+  if (targetId) {
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
 });
 
 links.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const targetId = this.getAttribute("href");
-    location.hash = targetId;
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth",
+    });
     menuItems.classList.toggle("show");
+    history.pushState(null, null, targetId);
   });
 });
