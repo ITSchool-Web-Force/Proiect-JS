@@ -11,10 +11,9 @@ const btnCloseModal = document.querySelectorAll(".close-modal");
 const closeHamburger = document.querySelector("main");
 const options = document.querySelectorAll(".medic");
 const modals = document.querySelectorAll(".modal");
-let currentSlide = 0;
-
 const btnText = document.querySelector(".continue");
 const text = document.querySelector(".continue-text");
+let currentSlide = 0;
 
 btnText.addEventListener("click", function () {
   if (text.classList.contains("hidden")) {
@@ -112,13 +111,18 @@ next.addEventListener("click", nextSlide);
 
 showSlide();
 
+window.addEventListener("hashchange", function () {
+  const targetId = location.hash;
+  document.querySelector(targetId).scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 links.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const targetId = this.getAttribute("href");
-    document.querySelector(targetId).scrollIntoView({
-      behavior: "smooth",
-    });
+    location.hash = targetId;
     menuItems.classList.toggle("show");
   });
 });
