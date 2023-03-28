@@ -49,6 +49,11 @@ body {
     font-weight: bold;
     padding-bottom: 1rem;
 }
+.vcon {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: end;
+}
 h1 {
     color:white;
     text-align: center;
@@ -108,5 +113,11 @@ h3 {
         justify-content: flex-end;
         gap: 1rem;
         font-size: 2.5vh;
+    }
+    .vcon {
+        height: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
     }
 }

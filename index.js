@@ -27,3 +27,8 @@ window.addEventListener("load", function() {
         }
     });
 });
+
+var volumeControl = document.querySelector(".vcon img");
+volumeControl.addEventListener("click", function() {
+  alert("If you want to mute/unmute the sound press M");
+});
