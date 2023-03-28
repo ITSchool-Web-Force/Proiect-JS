@@ -2,22 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Proiect JavaScript</title>
+    <title>Casa Boemia</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="script.js"></script>
+    <title>Casa Boemia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"/>
   </head>
-  <body>
-    <div class="vh-100 d-flex flex-column">
-      <header class="navbar bg-primary bg-gradient">
-        <div class="container-fluid">
-          <h1 class="navbar-brand mb-0 text-white">Proiect JavaScript</h1>
+
+<body>
+    <header class="main-header wide-header">
+        <div class="logo">
+            <img class="img" src="poze/logo.jpeg"
+                 alt="Casa Boemia Logo">
+            <div class="phone">
+                <i class="material-icons">phone</i>
+                <a class="phonenr" href="tel:+40732324422">0742424422</a>
+            </div>
         </div>
-      </header>
-      <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
-        <h2 class="display-1 text-center">15 Septembrie 2022</h2>
-      </main>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Acasa</a>
+            <a class="nav-link" href="servicii.html">Servicii</a>
+            <a class="nav-link" href="Galerie.html">Galerie</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <header class="main-header narrow-header">
+        <div class="logo">
+            <img class="img" src="poze/logo.jpeg"
+                 alt="Casa Boemia Logo">
+            <div class="phone">
+                <i class="material-icons" id="hamburgerIcon">menu</i>
+            </div>
+        </div>
+        <nav class="nav" id="hamburgerMenu">
+            <a class="nav-link" href="index.html">Acasa</a>
+            <a class="nav-link" href="servicii.html">Servicii</a>
+            <a class="nav-link" href="Galerie.html">Galerie</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Centru rezidential pentru persoane varstnice</h1>
     </div>
-  </body>
+    <div class="main-index"> 
+        <p class="text">Confortul și grija pentru seniorii noștri sunt principalele coordonate ale activității care o desfășuram zilnic!
+        <br> Vă oferim exact locul în care să vă aduceți părinții și bunicii: cald, primitor și confortabil. 
+        Viața rezidenților se schimbă în totalitate și mai ales starea lor de spirit, într-un centru în care sunt respectate standardele de calitate și în care personalul este dedicat în totalitate, lor.</p>
+        <img class="pozacuplu" src="poze/cuplupeplaja.jpeg" alt="Two old people walking on the beach"> 
+        <p class="text">Centrul nostru de asistenţă, îngrijire şi tratament vine ca o soluţie la dilema copiilor care au părinţi în vârstă,
+        faţă de care sunt recunoscători pentru toată investiţia şi doresc să le ofere o bătrâneţe liniştită în mediul cel mai plăcut, cu îngrijiri medico-sociale specializate.</p>            <p class="text2">De aceea, pentru că ne pasă şi iubim oamenii, acordăm o atenţie deosebită persoanelor de vârsta a treia,
+        dăruind şi investind tot ce ţine de noi pentru a fi profesionişti în serviciile furnizate şi dorim să fim aproape de inimile rezidenţilor noștri. </p>
+        <div class="icons">
+          <i class="material-icons">medical_services</i>
+          <p>Asistenta medicala 24/24h</p>
+          <i class="material-icons">restaurant</i>
+          <p>Regim personalizat</p>
+          <i class="material-icons">mood</i>
+          <p>Activitati recreative</p>
+        </div>
+        <p class="text3">Găzduim inclusiv persoane vârstnice independente, care nu se confruntă cu nicio boală gravă, dar care, odată cu pensionarea, 
+        resimt acut nevoia de a avea o viață socială, de a aparține unei comunități și de a nu duce grija unor sarcini cotidiene istovitoare, printre care îngrijirea curții, spălatul rufelor, mersul la cumpărături si multe alte cele.<br> Astfel, există numeroase motive pentru care bătrânilor le-ar fi mai bine să locuiască într-un centru rezidențial destinat nevoilor lor.</p>
+        <img src="poze/proiect.jpg" class="ipad" alt="An Ipad near a bed">
+        <p class="text4">Noi, cei din echipa Casa Boemia, oferim fiecărui senior îngrijirea medicală de care are nevoie, în funcție de afecțiunea cu care se confruntă. 
+        În centrele rezidențiale Casa Boemia, pacienții sunt consultați zilnic, iar tratamentul medical recomandat de medici este întotdeauna respectat și atent monitorizat. </p>
+        <p class="text5" >Echipa noastră este alcătuită din medici generaliști, medici specialiști colaboratori (psihiatri, ortopezi, cardiologi, neurologi), psihologi, toți cu o vastă experiență în domeniu și foarte atenți la nevoile fiecărui pacient.
+        Alături de noi, îi oferi uneia dintre cele mai importante persoane din viața ta șansa la bătrânețea sigură, demnă și liniștită pe care o merită. </p>
+    </div>
+    <footer class="description">
+    Casa Boemia Giroc &copy; 2023. <br>Toate drepturile sunt rezervate.
+    </footer>
+    <div id="backToTop">
+        <i class="material-icons">arrow_upward</i>
+    </div>
+</body>
 </html>

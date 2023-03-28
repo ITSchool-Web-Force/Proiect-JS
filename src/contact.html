@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script type="module" src="script.js"></script>
+    <title>Casa Boemia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+
+<body>
+    <header class="main-header wide-header">
+        <div class="logo">
+            <img class="img" src="poze/logo.jpeg"
+                 alt="Casa Boemia Logo">
+            <div class="phone">
+                <i class="material-icons">phone</i>
+                <a class="phonenr" href="tel:+40732324422">0742424422</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Acasa</a>
+            <a class="nav-link" href="servicii.html">Servicii</a>
+            <a class="nav-link" href="Galerie.html">Galerie</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <header class="main-header narrow-header">
+        <div class="logo">
+            <img class="img" src="poze/logo.jpeg"
+                 alt="Casa Boemia Logo">
+            <div class="phone">
+                <i class="material-icons" id="hamburgerIcon">menu</i>
+            </div>
+        </div>
+        <nav class="nav" id="hamburgerMenu">
+            <a class="nav-link" href="index.html">Acasa</a>
+            <a class="nav-link" href="servicii.html">Servicii</a>
+            <a class="nav-link" href="Galerie.html">Galerie</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+    <div class="main-contact">
+        <div class="contact">
+            <div class="icoanecontact">
+                <i class="material-icons">phone</i>
+                <i class="material-icons">location_on</i>
+                <i class="material-icons">email</i>
+                <i class="material-icons">group</i>
+            </div>
+            <div class="infocontact">
+                <a class="phonenr" href="tel:+40700998877">0700998877</a>
+                <a class="phonenr" href="https://goo.gl/maps/Cxzgj7NfwKQdWeYx6">Calea Timisoarei nr. 80, Giroc</a>
+                <a class="phonenr" href="#">casa.boemia2020@gmail.com</a>
+                <a class="phonenr" href="https://www.facebook.com/people/Casa-Boemia-Giroc/100085536936785/">Casa Boemia Giroc</a>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.643525431768!2d21.23450921541553!3d45.718187779104845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d8a85589fb7%3A0x7a378112cc8d8ff!2sCasa%20Boemia%20Giroc!5e0!3m2!1sro!2sro!4v1679916961745!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>    
+        </div>
+        </div>
+        <div class="form">
+            <h2>Programează o vizită</h2>
+            <p> Vă invităm să ne vizitați, pentru a ne cunoaște și pentru a experimenta direct stilul de viață de la Casa Boemia.
+            <br> Completați formularul de mai jos și vă vom contacta în cel mai scurt timp pentru a programa vizionarea.</p>
+        </div>
+        <form name="contact"  id="the-form" method="post" netlify>
+            <div class="form-container">
+                <div class="form-row">
+                    <label class="form-group">Nume: <input 
+                            type="text" 
+                            name="name" />
+                    </label>
+                    <label class="form-group">Telefon: <input 
+                            type="number" 
+                            name="phone"  
+                            minlength="10" />
+                    </label>
+                    <label class="form-group">Email: <input 
+                            type="email" 
+                            name="email" />
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label class="form-group">Mesaj: 
+                        <textarea></textarea>
+                    </label>
+                </div>
+                <label class="checkbox"> <input 
+                        type="checkbox" 
+                        name="accept" />
+                Am citit Politica de confidențialitate și sunt de acord cu procesarea datelor personale. 
+                </label>
+                <div class="form-group">
+                    <div class="form-row">
+                        <button class="form-button" 
+                        type="submit">Trimite
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer> 
+        Casa Boemia Giroc &copy; 2023. <br>Toate drepturile sunt rezervate.
+    </footer>
+    <div id="backToTop">
+        <i class="material-icons">arrow_upward</i>
+    </div>
+</body>
+</html>
