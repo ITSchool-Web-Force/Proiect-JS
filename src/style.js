@@ -8,9 +8,10 @@ shoppingCart.forEach((event) => {
 });
 
 //eveniment hashchange
-window.onhashchange = function() {
+addEventListener("hashchange", (event) => {
   console.log('Hash changed!');
-}
+});
+  
 
 //evenimente transitionstart, transitionend
 const message = document.querySelector(".message");
