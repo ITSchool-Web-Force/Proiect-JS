@@ -6,6 +6,7 @@ const theNavbar = document.querySelector('.navbar');
 window.addEventListener("resize", (event) => {        
         if(theNavbar.classList.contains('show')) {
             showHide();
+            document.body.style.overflowY = 'visible';
         } 
 });
 
