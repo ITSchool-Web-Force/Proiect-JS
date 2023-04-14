@@ -1,23 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Proiect JavaScript</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <div class="vh-100 d-flex flex-column">
-      <header class="navbar bg-primary bg-gradient">
-        <div class="container-fluid">
-          <h1 class="navbar-brand mb-0 text-white">Proiect JavaScript</h1>
-        </div>
-      </header>
-      <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
-        <h2 class="display-1 text-center">15 Septembrie 2022</h2>
-      </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/index.scss"/>
+
+    <title>Dicționar Urban</title>
+</head>
+<body>
+    <div class="the-body">
+        <header class="the-header">
+            <div class="the-wrapper">
+                <div class="logo">
+                    <a href="/src/index.html"><img src="/src/img/logo.svg" class="logo" alt="logo"/></a>
+                </div>
+                <div class="navbar">
+                    <div class="close-nav"><button>X</button></div>
+                    <nav>
+                        <ul>
+                            <li><a href="/src/index.html">Acasă</a></li>
+                            <li><a href="/src/add.html">Adaugă</a></li>
+                            <li><a href="/src/login.html">Autentificare</a></li>
+                            <li><a href="/src/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bar">
+                    <button>&#9776;</button>
+                </div>
+                <form id="search-form" method="get" action="">
+                <input class="search-input" type="search" placeholder="Caută...">
+                <button type="submit" class="search-button">
+                    <img src="/src/img/search.svg" alt="search button"/>
+                </button>
+                </form> 
+            </div>     
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="expressions-list">
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">lasă că vin eu acasă</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Expresie amenințătoare folosită, de obicei, de un părinte când copilul său a făcut ceva rău.</div>
+                        <div class="example">Mama: 20 de absențe luna asta? Lasă că vin eu acasă...</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">George</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>
+                        <div class="last-row">
+                            <div class="likes-system">
+                                <a class="like-part" href="">
+                                    <img src="/src/img/like.svg"/>
+                                    <span class="likes">12323</span>
+                                </a>
+                                <a class="dislike-part" href="">
+                                    <img src="/src/img/dislike.svg"/>
+                                    <span class="dislikes">3232</span>
+                                </a>
+                            </div>
+                            <a href="" class="report"><img src="/src/img/report.svg"/></a>
+                        </div>                
+                    </div>
+
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE 2</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>
+                        <div class="last-row">
+                            <div class="likes-system">
+                                <a class="like-part" href="">
+                                    <img src="/src/img/like.svg"/>
+                                    <span class="likes">12323</span>
+                                </a>
+                                <a class="dislike-part" href="">
+                                    <img src="/src/img/dislike.svg"/>
+                                    <span class="dislikes">3232</span>
+                                </a>
+                            </div>
+                            <a href="" class="report"><img src="/src/img/report.svg"/></a>
+                        </div>                
+                    </div>
+
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE 3</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>
+                        <div class="last-row">
+                            <div class="likes-system">
+                                <a class="like-part" href="">
+                                    <img src="/src/img/like.svg"/>
+                                    <span class="likes">12323</span>
+                                </a>
+                                <a class="dislike-part" href="">
+                                    <img src="/src/img/dislike.svg"/>
+                                    <span class="dislikes">3232</span>
+                                </a>
+                            </div>
+                            <a href="" class="report"><img src="/src/img/report.svg"/></a>
+                        </div>                
+                    </div>
+
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE 3</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>
+                        <div class="last-row">
+                            <div class="likes-system">
+                                <a class="like-part" href="">
+                                    <img src="/src/img/like.svg"/>
+                                    <span class="likes">12323</span>
+                                </a>
+                                <a class="dislike-part" href="">
+                                    <img src="/src/img/dislike.svg"/>
+                                    <span class="dislikes">3232</span>
+                                </a>
+                            </div>
+                            <a href="" class="report"><img src="/src/img/report.svg"/></a>
+                        </div>                
+                    </div>
+
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE 4</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>
+                        <div class="last-row">
+                            <div class="likes-system">
+                                <a class="like-part" href="">
+                                    <img src="/src/img/like.svg"/>
+                                    <span class="likes">12323</span>
+                                </a>
+                                <a class="dislike-part" href="">
+                                    <img src="/src/img/dislike.svg"/>
+                                    <span class="dislikes">3232</span>
+                                </a>
+                            </div>
+                            <a href="" class="report"><img src="/src/img/report.svg"/></a>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="expression-day"><h2>Expresia zilei</h2>
+                    <div class="expression-card">
+                        <div class="first-row">
+                            <div class="expression">EXPRESIE 5</div>
+                            <a href="" class="share"><img src="/src/img/share.svg"/></a>
+                        </div>
+                        <div class="explication">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                        <div class="example">Persoana: Am folosit o expresie. Îți place?</div>
+                        <div class="card-info">adăugat de 
+                            <span class="author">Iustin</span>
+                            pe
+                            <span class="date">16.03.2023</span>
+                        </div>               
+                    </div>
+                </div>
+                <div class="add-expression">
+                    <h2>Poți contribui și tu la acest dicționar</h2>
+                    <a  href="/src/add.html" class="add-button">Adaugă o expresie</a>
+                </div>
+            </div>
+        </div>    
+        <footer class="the-footer">
+            <div class="info">2023 * Dicționar Urban - still working on it</div>
+        </footer>
     </div>
-  </body>
+    <script type="module" src="/src/index.js"></script>
+</body>
 </html>
