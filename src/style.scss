@@ -214,10 +214,12 @@ section p {
     align-items: center;
     justify-items: center;
     gap: 0.5rem;
+    padding: 1rem;
 }
 .candles:hover {
     transform: scale(101%);
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(212, 214, 214, 0.5);
+    border: 1px solid grey;
 }
 .reviews-nav {
     display: flex;
