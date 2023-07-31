@@ -1,0 +1,404 @@
+$enable-shadows: true;
+$enable-gradients: true;
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', 'Nunito Sans', 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
+    color: #333;
+    background-color:#f4ede7;
+}
+.banner {
+    background-color: orange;
+    color: black;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    transition: font-size 4s ease-in-out;
+    transition-delay: 0.5s;
+}
+.banner:hover {
+    font-size: 1.5rem;
+}
+.wrapper {
+    width: 85%;
+    margin-inline: auto;
+    margin-block: 1rem;
+    background-color:white;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+    font-size: 1rem;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#logo {
+    height: 10vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center; 
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;  
+    padding-inline: 0;
+}
+li a {
+    text-decoration: none;
+    color: #7E7E7E;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-block: 0;
+}
+li a:hover {
+    color: green;
+    font-weight:bold;
+    background-color: rgb(238, 243, 243);
+    padding-inline:1rem;
+    padding-block: 0.3rem;
+    border:2px solid rgba(16, 99, 99, 0.5);
+    padding: 4px 10px;
+    margin: 5px 0 5px 4px;
+    border-radius: 1rem;
+    border: transparent 1px solid;
+}
+#image1 {
+    width: 100%;
+    margin-inline: auto;
+    background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 1rem;
+    padding-block-end: 3rem;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(238, 243, 243);
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+h3 {
+    cursor: pointer;
+}
+.tab {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 1rem;      
+    line-height: normal;
+}
+.turned-leaf {
+    transform: rotateY(180deg);
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    gap: 1.2rem;
+    width: 90%;
+    height: 30%;
+    margin-inline: auto;
+}
+.candles-image {
+    margin-inline: auto;
+    box-sizing: content-box;
+    width: 100%;
+    grid-area: CANDLES-IMAGE;
+}
+.image-text {
+    grid-area: IMAGE-TEXT;
+    color: #7E7E7E;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0;
+    margin: 0rem;
+    font-size: 1rem;
+}
+.image-price {
+    grid-area: IMAGE-PRICE;
+    margin: 0;
+    font-weight: bold;
+}
+.shopping-cart {
+    grid-area: SHOPPING-CART;
+    height: 2rem;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+section p {
+    color: green;
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    padding-block: 1rem;
+    padding-inline: 0;
+}
+.leaf, .turned-leaf {
+    height: 1.5rem;
+}
+#candles1 {
+    grid-area: CANDLES1;
+}
+#candles2 {
+    grid-area: CANDLES2;
+}
+#candles3 {
+    grid-area: CANDLES3;
+}
+#candles4 {
+    grid-area: CANDLES4;
+}
+#candles5 {
+    grid-area: CANDLES5;
+}
+#candles6 {
+    grid-area: CANDLES6;
+}
+#candles14 {
+    grid-area: CANDLES14;
+}
+#candles15 {
+    grid-area: CANDLES15;
+}
+#candles16 {
+    grid-area: CANDLES16;
+}
+.candles {
+    display: grid;
+    grid-template-columns: 2.2fr 1.5fr 0.7fr;
+    grid-template-rows: 2fr 0.5fr;
+    grid-template-areas: 
+    "CANDLES-IMAGE CANDLES-IMAGE CANDLES-IMAGE"
+    "IMAGE-TEXT    IMAGE-PRICE   SHOPPING-CART";
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.candles:hover {
+    transform: scale(101%);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(212, 214, 214, 0.5);
+    border: 1px solid grey;
+}
+.reviews-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.review {
+    padding: 0.5rem;
+    border-block: 3px solid green;
+    background-color: rgb(238, 243, 243);
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.review:hover {
+    transform: scale(101%);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(171, 172, 172, 0.5);
+}
+.client-name {
+    font-weight: bold;
+}
+#facebook, #instagram {
+    height: 2rem;
+}
+footer {
+    color: green;
+    background-color: #8eb4ac;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+#footer-text {
+    margin: 0;
+}
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5;
+}
+#footer-contact p {
+    margin: 0;
+}
+@media (min-width: 450px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .tab {
+        font-size: 0.6rem;
+    }
+}
+@media (min-width: 480px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "CANDLES1  CANDLES2"
+        "CANDLES3  CANDLES4"
+        "CANDLES5  CANDLES6";
+    }
+    li a {
+        font-size: 1.3rem;
+    }
+    section p {
+        font-size: 1.6rem;
+        padding-block: 1.3rem;
+    }
+}
+@media (min-width: 500px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+    .logo {
+        padding-inline: 1rem;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: flex-end;
+        margin-block-end: 0;
+        padding: 0;
+        gap: 1.8rem;
+    }
+    .leaf, .turned-leaf {
+        display: inline-flex;
+    }
+    .reviews-nav {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-inline: auto;
+    }
+    .review {
+        border: 3px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+    }
+    .tab {
+        font-size: 0.7rem;
+    }
+    #footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    footer {
+        color: green;
+        background-color: rgb(238, 243, 243);
+        padding-block-start: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        gap: 1rem;
+    }
+}
+@media (min-width: 580px) {
+    .tabs {
+        flex-direction: row;
+    }
+}
+@media (min-width: 920px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "CANDLES1  CANDLES2 CANDLES3"
+        "CANDLES4  CANDLES5 CANDLES6";
+    }
+    li a {
+        font-size: 1.3rem;
+    }
+    ul {
+        gap: 1rem;
+    }
+    #logo {
+        height: 12vh;
+        padding: 1rem;
+    }
+    section p {
+        font-size: 2rem;
+        padding-block: 1.6rem;
+    }
+    .tab {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1000px) {
+    .wrapper {
+        width: 65%;
+    }
+}
